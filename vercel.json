@@ -1,15 +1,13 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "Patient case taking/server.js",
-      "use": "@vercel/node"
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "Patient case taking/public/**,Patient case taking/data/**"
     }
-  ],
-  "routes": [
+  },
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "Patient case taking/server.js"
+      "source": "/(.*)",
+      "destination": "/api/index"
     }
   ]
 }
