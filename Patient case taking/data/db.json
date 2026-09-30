@@ -1,0 +1,2905 @@
+{
+  "users": [
+    {
+      "id": "doc-1",
+      "role": "DOCTOR",
+      "name": "Dr. Sharma",
+      "email": "doctor@patinote.demo",
+      "password": "$2a$10$Qa2Rkuz4kvfXL.NDTXBOMOIXpzuWcml9qDEt/UlkSRU3iVHRGiy5S",
+      "department": "General Medicine",
+      "hospitalId": "hospital-1",
+      "licenseNumber": "MCI-2024-88392",
+      "licenseFile": "medical_license_dr_sharma.pdf",
+      "graduationCertificate": "mbbs_degree_dr_sharma.pdf"
+    },
+    {
+      "id": "doc-2",
+      "role": "DOCTOR",
+      "name": "Dr. Ananya Reddy",
+      "email": "ananya@patinote.demo",
+      "password": "$2a$10$Qa2Rkuz4kvfXL.NDTXBOMOIXpzuWcml9qDEt/UlkSRU3iVHRGiy5S",
+      "department": "Cardiology",
+      "hospitalId": "hospital-1",
+      "licenseNumber": "MCI-2024-44129",
+      "licenseFile": "medical_license_dr_reddy.pdf",
+      "graduationCertificate": "mbbs_degree_dr_reddy.pdf"
+    },
+    {
+      "id": "admin-1",
+      "role": "ADMIN",
+      "name": "System Administrator",
+      "email": "admin@patinote.demo",
+      "password": "$2a$10$emsNFqA.r8OJUKBVBKmj1OW5pZP.FLlC4CDRABLELeJF/a4i4CvyS"
+    },
+    {
+      "id": "PAT-1790753114678-401cc5a4",
+      "role": "PATIENT",
+      "name": "Test Patient",
+      "email": "test.pat.1790753114601@example.com",
+      "password": "$2a$10$Yno4ywUC29v6jmD5BdV/TOWD/Eksk/auXUQ9Lxo.eVHi9wX3s2wUS",
+      "age": 30,
+      "gender": "Female",
+      "createdAt": "2026-09-30T07:25:14.828Z"
+    },
+    {
+      "id": "PAT-DEMO-1790753115064-8718b4ec",
+      "role": "PATIENT",
+      "name": "Aarav Mehta (Demo)",
+      "email": "demo.routine@carepath.demo",
+      "password": "$2a$10$wIRkd2OhCr57LJfOs2B7dOldojRv.VSuTGsw1uf5rZO9vGSd4XWWC",
+      "age": 26,
+      "gender": "Male",
+      "createdAt": "2026-09-30T07:25:15.169Z"
+    },
+    {
+      "id": "PAT-DEMO-1790753115181-0929cb01",
+      "role": "PATIENT",
+      "name": "Sunita Rao (Demo)",
+      "email": "demo.urgent@carepath.demo",
+      "password": "$2a$10$px0VEUXuk07NXswPxl8sa.GcB9vqG5W9H5If9iMkA03dsD26pwPBi",
+      "age": 44,
+      "gender": "Female",
+      "createdAt": "2026-09-30T07:25:15.271Z"
+    },
+    {
+      "id": "PAT-DEMO-1790753115274-a36b71c4",
+      "role": "PATIENT",
+      "name": "Vikram Malhotra (Demo)",
+      "email": "demo.high-priority@carepath.demo",
+      "password": "$2a$10$Jk3uYCt71v.vpgPRupLmmuGhsr9HRccEfQFqWpSQSrnrnjv/aEK.C",
+      "age": 58,
+      "gender": "Male",
+      "createdAt": "2026-09-30T07:25:15.352Z"
+    },
+    {
+      "id": "PAT-1790753200065-5123a201",
+      "role": "PATIENT",
+      "name": "Restricted Patient",
+      "email": "restricted.1790753200057@example.com",
+      "password": "$2a$10$O3Ex4nM63jFwslUA.mJIDOegEFPBFBI3wHRmYeeItdrG3ZpfSV5ma",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:26:40.206Z"
+    },
+    {
+      "id": "PAT-1790753200223-b158931b",
+      "role": "PATIENT",
+      "name": "Patient A",
+      "email": "pata.1790753200220@example.com",
+      "password": "$2a$10$DZLWmbYHs0MWHkFUPTsbn.2zVWhXRWvwfv1z8a/LX1ZdIDQWlZYWO",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:26:40.327Z"
+    },
+    {
+      "id": "PAT-1790753200334-4dd1e67c",
+      "role": "PATIENT",
+      "name": "Patient B",
+      "email": "patb.1790753200330@example.com",
+      "password": "$2a$10$WLUvRf5cp5xTgU69chKnqOYXnfPcw7rqI6V79NrvQC9Ng3FtuRbw6",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:26:40.431Z"
+    },
+    {
+      "id": "PAT-1790753261061-76c96828",
+      "role": "PATIENT",
+      "name": "Restricted Patient",
+      "email": "restricted.1790753261056@example.com",
+      "password": "$2a$10$Z/KYKUe6kJItTeMQLs25/uvMHFuVSnoPiGfyB0Fc5orcbchMW.sf2",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:27:41.228Z"
+    },
+    {
+      "id": "PAT-1790753261239-a1931840",
+      "role": "PATIENT",
+      "name": "Patient A",
+      "email": "pata.1790753261237@example.com",
+      "password": "$2a$10$gXu4bnCaJTDufyd21M6XAuGc77/5OJ/tCq4aEcdu8MDg88DpPON8u",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:27:41.369Z"
+    },
+    {
+      "id": "PAT-1790753261374-86d2df3d",
+      "role": "PATIENT",
+      "name": "Patient B",
+      "email": "patb.1790753261372@example.com",
+      "password": "$2a$10$OqJXx3/phOrDQPjjNUS1Luvzl3Zvlj8Mjne31ibT.9zkCltgud3B.",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:27:41.504Z"
+    },
+    {
+      "id": "PAT-1790754170940-88897e68",
+      "role": "PATIENT",
+      "name": "Restricted Patient",
+      "email": "restricted.1790754170937@example.com",
+      "password": "$2a$10$PvKBd6Qv2rtBCPxaFQeutufzG4Sjvp4/gzR5ytHGgjWfn1EIjuVFG",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:42:51.066Z"
+    },
+    {
+      "id": "PAT-1790754171087-745f7c24",
+      "role": "PATIENT",
+      "name": "Patient A",
+      "email": "pata.1790754171083@example.com",
+      "password": "$2a$10$0EkejQ48ZACRNZqNILa16Ovpm9.OFxr0SZxaN5Kozov.0ibtHzfUm",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:42:51.186Z"
+    },
+    {
+      "id": "PAT-1790754171192-3a6de9ed",
+      "role": "PATIENT",
+      "name": "Patient B",
+      "email": "patb.1790754171189@example.com",
+      "password": "$2a$10$/fmZn0iUfdqOdtsIXJ.18eC03gCxW81WMoyUIzV4bdST5SEZmM5.K",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:42:51.338Z"
+    }
+  ],
+  "hospitals": [
+    {
+      "id": "hospital-1",
+      "name": "CarePath Central Hospital",
+      "city": "Hyderabad",
+      "departments": [
+        "General Medicine",
+        "Cardiology",
+        "Emergency",
+        "Pulmonology",
+        "Neurology",
+        "Gastroenterology",
+        "Pediatrics",
+        "Dermatology"
+      ]
+    }
+  ],
+  "consultations": [
+    {
+      "id": "CONS-1790753114999-2986d7c7",
+      "displayId": "01/10/2026/001",
+      "patientId": "PAT-1790753114678-401cc5a4",
+      "patientName": "Test Patient",
+      "doctorId": "doc-1",
+      "hospitalId": "hospital-1",
+      "department": "Emergency / Cardiology",
+      "suggestedDepartment": "Emergency / Cardiology",
+      "appointmentDate": "2026-10-01",
+      "otp": null,
+      "otpExpiresAt": "2026-09-30T07:25:15.058Z",
+      "otpAttempts": 1,
+      "state": "COMPLETED",
+      "lifecycleState": "REVIEWED",
+      "priority": "HIGH",
+      "language": "en",
+      "consentGiven": true,
+      "nextQuestion": null,
+      "structured": {
+        "patientName": {
+          "value": "Test Patient",
+          "source": "Patient registration"
+        },
+        "age": {
+          "value": 30,
+          "source": "Patient registration"
+        },
+        "gender": {
+          "value": "Female",
+          "source": "Patient registration"
+        },
+        "chiefComplaint": {
+          "value": "Severe chest pain radiating to left arm",
+          "source": "Patient initial statement",
+          "confidence": "HIGH"
+        },
+        "severity": {
+          "value": 8,
+          "source": "Patient response to chief",
+          "confidence": "HIGH"
+        }
+      },
+      "vitals": {
+        "temperature": "98.6",
+        "bloodPressure": "160/100",
+        "heartRate": "112",
+        "spo2": "93"
+      },
+      "reports": [],
+      "responses": [
+        {
+          "id": "RESP-1790753115012-a6b50003",
+          "questionId": "chief",
+          "question": "What main health problem or discomfort are you experiencing today?",
+          "answer": "Severe chest pain radiating to left arm",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.012Z"
+        }
+      ],
+      "redFlags": [
+        {
+          "id": "FLAG-1790753115016-54e5dbb1",
+          "trigger": "Acute chest discomfort with high severity or autonomic symptoms",
+          "evidence": "Severe chest pain radiating to left arm",
+          "why": "Reported symptoms may indicate acute coronary or thoracic emergency. Immediate clinical evaluation is required.",
+          "severity": "HIGH",
+          "source": "Autonomous Risk Engine",
+          "timestamp": "2026-09-30T07:25:15.016Z"
+        }
+      ],
+      "decisionTrace": [
+        {
+          "timestamp": "2026-09-30T07:25:15.000Z",
+          "stage": "OBSERVE",
+          "event": "Case initialized",
+          "detail": "Patient Test Patient registered for intake session.",
+          "action": "Ready for chief complaint inquiry"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.012Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [chief], Answer length: 39 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "chief",
+          "method": "text",
+          "answerLength": 39
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.015Z",
+          "stage": "ANALYZE",
+          "event": "Complaint category identified",
+          "detail": "Primary presentation mapped to [cardiovascular]",
+          "action": "Tailoring dynamic clinical question roadmap",
+          "category": "cardiovascular"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.016Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: HIGH. Warning indicators detected: 1",
+          "action": "Triggering clinical escalation protocol",
+          "riskLevel": "HIGH",
+          "indicators": [
+            "Acute chest discomfort with high severity or autonomic symptoms"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.016Z",
+          "stage": "QUESTION_SELECTION",
+          "event": "Next dynamic question selected",
+          "detail": "Next target: [onset]. Reason: Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. . Score: 1.3",
+          "action": "Querying patient in EN",
+          "selectedQuestion": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "score": 1.3,
+          "reason": "Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. ",
+          "candidates": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.022Z",
+          "stage": "ACT",
+          "event": "Vital signs integrated and evaluated",
+          "detail": "Vitals: BP 160/100, HR 112, SpO2 93%",
+          "action": "Triage priority updated: HIGH -> HIGH",
+          "vitals": {
+            "temperature": "98.6",
+            "bloodPressure": "160/100",
+            "heartRate": "112",
+            "spo2": "93"
+          },
+          "previousPriority": "HIGH",
+          "newPriority": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.022Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: Emergency / Cardiology (Confidence: HIGH)",
+          "action": "Attached routing rationale to case summary",
+          "department": "Emergency / Cardiology",
+          "confidence": "HIGH"
+        }
+      ],
+      "missingInformation": [
+        "onset",
+        "location",
+        "radiation",
+        "breathing",
+        "fever",
+        "past",
+        "medicines",
+        "allergies"
+      ],
+      "summary": "============================================================\n  CAREPATH AI · CLINICAL PRE-CONSULTATION CASE SUMMARY\n  Intelligent Systems & Autonomous Computing\n============================================================\n\n1. PATIENT DEMOGRAPHICS\n   • Name: Test Patient\n   • Age: 30\n   • Gender: Female\n   • Consultation Date: 2026-10-01\n\n2. CHIEF COMPLAINT & SYMPTOM PROFILE\n   • Primary Complaint: Severe chest pain radiating to left arm\n   • Category: CARDIOVASCULAR\n   • Duration / Onset: Not provided\n   • Severity (1-10): 8\n   • Location: Not provided\n   • Radiation: Not provided\n   • Associated Symptoms: Not provided\n\n3. MEDICAL BACKGROUND\n   • Past Medical History: Not provided\n   • Current Medications: Not provided\n   • Allergies: Not provided\n\n4. RECORDED VITAL SIGNS\n   • Blood Pressure: 160/100\n   • Heart Rate: 112 BPM\n   • SpO2: 93 %\n   • Temperature: 98.6 °F\n   • Respiratory Rate: Not recorded\n\n5. PRELIMINARY AI RISK ASSESSMENT\n   • Preliminary Risk Level: HIGH PRIORITY\n   • Suggested Department: Emergency / Cardiology\n   • Detected Warning Indicators:\n     - ⚠️ Acute chest discomfort with high severity or autonomic symptoms\n     - ⚠️ Mild to moderate shortness of breath\n     - ⚠️ Elevated / Low Heart Rate: 112 BPM\n     - ⚠️ Elevated Blood Pressure (160/100 mmHg)\n   • Escalation Action: Immediate medical staff notification & priority triage required.\n\n6. MISSING / UNCONFIRMED CLINICAL DATA\n   • onset\n   • location\n   • radiation\n   • breathing\n   • fever\n   • past\n   • medicines\n   • allergies\n\n7. CLINICAL REVIEW NOTICE\n   * This AI case sheet is for decision-support and history taking only.\n   * The doctor remains the final diagnostic and clinical authority.\n============================================================",
+      "doctorNotes": "",
+      "prescription": {
+        "items": [
+          {
+            "medicine": "Aspirin",
+            "dosage": "300mg",
+            "frequency": "Stat",
+            "duration": "1 dose",
+            "instructions": "Chew immediately"
+          }
+        ],
+        "instructions": "Immediate cardiac monitoring and ECG in ER.",
+        "finalized": true,
+        "finalizedAt": "2026-09-30T07:25:15.058Z"
+      },
+      "createdAt": "2026-09-30T07:25:14.999Z",
+      "updatedAt": "2026-09-30T07:25:15.058Z",
+      "patient": {
+        "id": "PAT-1790753114678-401cc5a4",
+        "name": "Test Patient",
+        "age": 30,
+        "gender": "Female"
+      },
+      "caseState": {
+        "consultationId": "CONS-1790753114999-2986d7c7",
+        "patientId": "PAT-1790753114678-401cc5a4",
+        "patientName": "Test Patient",
+        "age": 30,
+        "gender": "Female",
+        "rawNarrative": "Severe chest pain radiating to left arm",
+        "extractedEntities": {
+          "symptoms": [],
+          "duration": null,
+          "severity": 8,
+          "location": null,
+          "radiation": null,
+          "associatedSymptoms": [],
+          "history": [],
+          "medications": [],
+          "allergies": [],
+          "vitals": {
+            "temperature": "98.6",
+            "bloodPressure": "160/100",
+            "heartRate": "112",
+            "spo2": "93"
+          }
+        },
+        "missingInformation": [
+          "chief_complaint",
+          "onset_and_duration",
+          "character_and_location",
+          "associated_warning_signs",
+          "medical_history"
+        ],
+        "uncertainInformation": [],
+        "contradictoryInformation": [],
+        "answeredQuestions": [
+          "chief"
+        ],
+        "candidateQuestions": [],
+        "selectedQuestion": {
+          "id": "onset",
+          "text": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "answerType": "text-or-voice",
+          "score": 1.3,
+          "reason": "Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. "
+        },
+        "risk": {
+          "level": "HIGH",
+          "factors": [
+            "Acute chest discomfort with high severity or autonomic symptoms",
+            "Mild to moderate shortness of breath",
+            "Elevated / Low Heart Rate: 112 BPM",
+            "Elevated Blood Pressure (160/100 mmHg)"
+          ]
+        },
+        "decisionTrace": [],
+        "questionCount": 1,
+        "status": "ESCALATED",
+        "completionReason": null,
+        "createdAt": "2026-09-30T07:25:15.000Z",
+        "updatedAt": "2026-09-30T07:25:15.015Z",
+        "complaintCategory": "cardiovascular"
+      },
+      "complaintCategory": "cardiovascular",
+      "riskAssessment": {
+        "level": "HIGH",
+        "indicators": [
+          "Acute chest discomfort with high severity or autonomic symptoms",
+          "Mild to moderate shortness of breath",
+          "Elevated / Low Heart Rate: 112 BPM",
+          "Elevated Blood Pressure (160/100 mmHg)"
+        ],
+        "evidence": [
+          "Severe chest pain radiating to left arm",
+          "Breathing discomfort reported",
+          "Heart rate recorded at 112 BPM",
+          "Blood pressure: 160/100"
+        ],
+        "rationale": [
+          "Reported symptoms may indicate acute coronary or thoracic emergency. Immediate clinical evaluation is required.",
+          "Shortness of breath reported without immediate respiratory failure criteria.",
+          "Heart rate is outside standard resting boundaries.",
+          "Blood pressure elevation noted."
+        ],
+        "action": "Immediate medical staff notification & priority triage required.",
+        "disclaimer": "Preliminary AI Risk Assessment — not a diagnosis. Requires evaluation by a qualified healthcare professional."
+      },
+      "candidateQuestions": [
+        {
+          "id": "onset",
+          "attribute": "onset",
+          "text": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "score": 1.3,
+          "reason": "Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. ",
+          "breakdown": {
+            "informationGain": 0.55,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.4
+          }
+        },
+        {
+          "id": "radiation",
+          "attribute": "radiation",
+          "text": "Does the discomfort spread to your left arm, shoulder, neck, jaw, or back?",
+          "score": 1.15,
+          "reason": "Attribute 'radiation' is currently missing. Critical for acute cardiovascular/respiratory triage stratification. ",
+          "breakdown": {
+            "informationGain": 0.30000000000000004,
+            "riskRelevance": 0.2,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.30000000000000004
+          }
+        },
+        {
+          "id": "breathing",
+          "attribute": "breathing",
+          "text": "Are you experiencing any shortness of breath, cold sweating, or dizziness?",
+          "score": 1.1,
+          "reason": "Attribute 'breathing' is currently missing. Critical for acute cardiovascular/respiratory triage stratification. ",
+          "breakdown": {
+            "informationGain": 0.30000000000000004,
+            "riskRelevance": 0.2,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.25
+          }
+        },
+        {
+          "id": "past",
+          "attribute": "pastHistory",
+          "text": "Do you have any existing medical conditions such as high BP, diabetes, or heart disease?",
+          "score": 0.75,
+          "reason": "Attribute 'pastHistory' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.2
+          }
+        },
+        {
+          "id": "medicines",
+          "attribute": "medications",
+          "text": "Are you currently taking any prescription medicines or over-the-counter tablets?",
+          "score": 0.7,
+          "reason": "Attribute 'medications' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.15000000000000002
+          }
+        }
+      ],
+      "departmentConfidence": "HIGH",
+      "routingReasons": [
+        "Acute cardiovascular warning indicators detected requiring rapid triage."
+      ],
+      "doctorFeedback": {
+        "id": "FB-1790753115050-11bf901f",
+        "consultationId": "CONS-1790753114999-2986d7c7",
+        "doctorId": "doc-1",
+        "doctorName": "Dr. Sharma",
+        "aiPriority": "HIGH",
+        "doctorPriority": "HIGH",
+        "priorityChanged": false,
+        "aiDepartment": "Emergency / Cardiology",
+        "doctorDepartment": "Emergency / Cardiology",
+        "departmentChanged": false,
+        "feedbackNotes": "Confirmed acute coronary triage pathway.",
+        "timestamp": "2026-09-30T07:25:15.050Z"
+      }
+    },
+    {
+      "id": "CONS-DEMO-1790753115169-a52def21",
+      "displayId": "30/09/2026/002",
+      "patientId": "PAT-DEMO-1790753115064-8718b4ec",
+      "patientName": "Aarav Mehta (Demo)",
+      "doctorId": "doc-1",
+      "hospitalId": "hospital-1",
+      "department": "General Medicine",
+      "suggestedDepartment": "General Medicine",
+      "appointmentDate": "2026-09-30",
+      "otp": "884183",
+      "otpExpiresAt": "2026-09-30T08:25:15.169Z",
+      "otpAttempts": 0,
+      "state": "WAITING_FOR_DOCTOR",
+      "lifecycleState": "CASE_GENERATED",
+      "priority": "ROUTINE",
+      "language": "en",
+      "consentGiven": true,
+      "nextQuestion": null,
+      "structured": {
+        "patientName": {
+          "value": "Aarav Mehta (Demo)",
+          "source": "Simulated registration"
+        },
+        "age": {
+          "value": 26,
+          "source": "Simulated registration"
+        },
+        "gender": {
+          "value": "Male",
+          "source": "Simulated registration"
+        },
+        "chiefComplaint": {
+          "value": "Mild cold, runny nose, and slight sore throat.",
+          "source": "Patient initial statement",
+          "confidence": "HIGH"
+        },
+        "severity": {
+          "value": 3,
+          "source": "Patient response to fever",
+          "confidence": "HIGH"
+        },
+        "duration": {
+          "value": "yesterday",
+          "source": "Patient response to onset",
+          "confidence": "HIGH"
+        },
+        "onset": {
+          "value": "Started yesterday morning gradually.",
+          "source": "Patient interview",
+          "confidence": "HIGH"
+        },
+        "associatedSymptoms": {
+          "value": [
+            "Fever / Chills"
+          ],
+          "source": "Patient interview"
+        }
+      },
+      "vitals": {
+        "temperature": "98.6",
+        "bloodPressure": "120/80",
+        "heartRate": "72",
+        "spo2": "99"
+      },
+      "reports": [],
+      "responses": [
+        {
+          "id": "RESP-1790753115169-b7498650",
+          "questionId": "chief",
+          "question": "What main health problem or discomfort are you experiencing today?",
+          "answer": "Mild cold, runny nose, and slight sore throat.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.169Z"
+        },
+        {
+          "id": "RESP-1790753115172-a55a8c09",
+          "questionId": "onset",
+          "question": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "answer": "Started yesterday morning gradually.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.172Z"
+        },
+        {
+          "id": "RESP-1790753115173-e6276bcc",
+          "questionId": "severity",
+          "question": "On a scale from 1 to 10 (where 10 is unbearable), how severe is the discomfort?",
+          "answer": "Mild, about 3 out of 10.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.173Z"
+        },
+        {
+          "id": "RESP-1790753115173-1e194ee8",
+          "questionId": "fever",
+          "question": "Have you checked your temperature, or are you experiencing chills or shivering?",
+          "answer": "No fever, only a slight cough.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.173Z"
+        }
+      ],
+      "redFlags": [],
+      "decisionTrace": [
+        {
+          "timestamp": "2026-09-30T07:25:15.169Z",
+          "stage": "OBSERVE",
+          "event": "Case initialized",
+          "detail": "Patient Aarav Mehta (Demo) registered for intake session.",
+          "action": "Ready for chief complaint inquiry"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.169Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [chief], Answer length: 46 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "chief",
+          "method": "text",
+          "answerLength": 46
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.172Z",
+          "stage": "ANALYZE",
+          "event": "Complaint category identified",
+          "detail": "Primary presentation mapped to [general]",
+          "action": "Tailoring dynamic clinical question roadmap",
+          "category": "general"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.172Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: ROUTINE. Warning indicators detected: 0",
+          "action": "Updating risk profile",
+          "riskLevel": "ROUTINE",
+          "indicators": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.172Z",
+          "stage": "QUESTION_SELECTION",
+          "event": "Next dynamic question selected",
+          "detail": "Next target: [onset]. Reason: Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. . Score: 1.3",
+          "action": "Querying patient in EN",
+          "selectedQuestion": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "score": 1.3,
+          "reason": "Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. ",
+          "candidates": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.172Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [onset], Answer length: 36 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "onset",
+          "method": "text",
+          "answerLength": 36
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: ROUTINE. Warning indicators detected: 0",
+          "action": "Updating risk profile",
+          "riskLevel": "ROUTINE",
+          "indicators": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "QUESTION_SELECTION",
+          "event": "Next dynamic question selected",
+          "detail": "Next target: [associated]. Reason: Attribute 'associatedSymptoms' is currently missing. . Score: 0.85",
+          "action": "Querying patient in EN",
+          "selectedQuestion": "What other symptoms are you noticing alongside this main issue?",
+          "score": 0.85,
+          "reason": "Attribute 'associatedSymptoms' is currently missing. ",
+          "candidates": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [severity], Answer length: 24 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "severity",
+          "method": "text",
+          "answerLength": 24
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: ROUTINE. Warning indicators detected: 0",
+          "action": "Updating risk profile",
+          "riskLevel": "ROUTINE",
+          "indicators": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "QUESTION_SELECTION",
+          "event": "Next dynamic question selected",
+          "detail": "Next target: [associated]. Reason: Attribute 'associatedSymptoms' is currently missing. . Score: 0.85",
+          "action": "Querying patient in EN",
+          "selectedQuestion": "What other symptoms are you noticing alongside this main issue?",
+          "score": 0.85,
+          "reason": "Attribute 'associatedSymptoms' is currently missing. ",
+          "candidates": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [fever], Answer length: 30 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "fever",
+          "method": "text",
+          "answerLength": 30
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: ROUTINE. Warning indicators detected: 0",
+          "action": "Updating risk profile",
+          "riskLevel": "ROUTINE",
+          "indicators": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "QUESTION_SELECTION",
+          "event": "Next dynamic question selected",
+          "detail": "Next target: [past]. Reason: Attribute 'pastHistory' is currently missing. . Score: 0.75",
+          "action": "Querying patient in EN",
+          "selectedQuestion": "Do you have any existing medical conditions such as high BP, diabetes, or heart disease?",
+          "score": 0.75,
+          "reason": "Attribute 'pastHistory' is currently missing. ",
+          "candidates": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "ACT",
+          "event": "Vital signs integrated and evaluated",
+          "detail": "Vitals: BP 120/80, HR 72, SpO2 99%",
+          "action": "Triage priority updated: ROUTINE -> ROUTINE",
+          "vitals": {
+            "temperature": "98.6",
+            "bloodPressure": "120/80",
+            "heartRate": "72",
+            "spo2": "99"
+          },
+          "previousPriority": "ROUTINE",
+          "newPriority": "ROUTINE"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: General Medicine (Confidence: MEDIUM)",
+          "action": "Attached routing rationale to case summary",
+          "department": "General Medicine",
+          "confidence": "MEDIUM"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.173Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: General Medicine (Confidence: MEDIUM)",
+          "action": "Attached routing rationale to case summary",
+          "department": "General Medicine",
+          "confidence": "MEDIUM"
+        }
+      ],
+      "missingInformation": [
+        "location",
+        "fever",
+        "past",
+        "medicines",
+        "allergies"
+      ],
+      "summary": "============================================================\n  CAREPATH AI · CLINICAL PRE-CONSULTATION CASE SUMMARY\n  Intelligent Systems & Autonomous Computing\n============================================================\n\n1. PATIENT DEMOGRAPHICS\n   • Name: Aarav Mehta (Demo)\n   • Age: 26\n   • Gender: Male\n   • Consultation Date: 2026-09-30\n\n2. CHIEF COMPLAINT & SYMPTOM PROFILE\n   • Primary Complaint: Mild cold, runny nose, and slight sore throat.\n   • Category: GENERAL\n   • Duration / Onset: Started yesterday morning gradually.\n   • Severity (1-10): 3\n   • Location: Not provided\n   • Radiation: Not provided\n   • Associated Symptoms: Fever / Chills\n\n3. MEDICAL BACKGROUND\n   • Past Medical History: Not provided\n   • Current Medications: Not provided\n   • Allergies: Not provided\n\n4. RECORDED VITAL SIGNS\n   • Blood Pressure: 120/80\n   • Heart Rate: 72 BPM\n   • SpO2: 99 %\n   • Temperature: 98.6 °F\n   • Respiratory Rate: Not recorded\n\n5. PRELIMINARY AI RISK ASSESSMENT\n   • Preliminary Risk Level: ROUTINE\n   • Suggested Department: General Medicine\n   • Detected Warning Indicators:\n     - None detected from available responses.\n   • Escalation Action: Standard consultation scheduling appropriate.\n\n6. MISSING / UNCONFIRMED CLINICAL DATA\n   • location\n   • fever\n   • past\n   • medicines\n   • allergies\n\n7. CLINICAL REVIEW NOTICE\n   * This AI case sheet is for decision-support and history taking only.\n   * The doctor remains the final diagnostic and clinical authority.\n============================================================",
+      "doctorNotes": "",
+      "prescription": {
+        "items": [],
+        "instructions": "",
+        "finalized": false,
+        "finalizedAt": null
+      },
+      "createdAt": "2026-09-30T07:25:15.169Z",
+      "updatedAt": "2026-09-30T07:25:15.173Z",
+      "patient": {
+        "id": "PAT-DEMO-1790753115064-8718b4ec",
+        "name": "Aarav Mehta (Demo)",
+        "age": 26,
+        "gender": "Male"
+      },
+      "caseState": {
+        "consultationId": "CONS-DEMO-1790753115169-a52def21",
+        "patientId": "PAT-DEMO-1790753115064-8718b4ec",
+        "patientName": "Aarav Mehta (Demo)",
+        "age": 26,
+        "gender": "Male",
+        "rawNarrative": "Mild cold, runny nose, and slight sore throat. | Started yesterday morning gradually. | Mild, about 3 out of 10. | No fever, only a slight cough.",
+        "extractedEntities": {
+          "symptoms": [],
+          "duration": "yesterday",
+          "severity": 3,
+          "location": null,
+          "radiation": null,
+          "associatedSymptoms": [
+            "Fever / Chills"
+          ],
+          "history": [],
+          "medications": [],
+          "allergies": [],
+          "vitals": {
+            "temperature": "98.6",
+            "bloodPressure": "120/80",
+            "heartRate": "72",
+            "spo2": "99"
+          }
+        },
+        "missingInformation": [
+          "chief_complaint",
+          "character_and_location",
+          "medical_history"
+        ],
+        "uncertainInformation": [],
+        "contradictoryInformation": [],
+        "answeredQuestions": [
+          "chief",
+          "onset",
+          "severity",
+          "fever"
+        ],
+        "candidateQuestions": [],
+        "selectedQuestion": {
+          "id": "past",
+          "text": "Do you have any existing medical conditions such as high BP, diabetes, or heart disease?",
+          "answerType": "text-or-voice",
+          "score": 0.75,
+          "reason": "Attribute 'pastHistory' is currently missing. "
+        },
+        "risk": {
+          "level": "ROUTINE",
+          "factors": []
+        },
+        "decisionTrace": [],
+        "questionCount": 4,
+        "status": "COMPLETED",
+        "completionReason": null,
+        "createdAt": "2026-09-30T07:25:15.169Z",
+        "updatedAt": "2026-09-30T07:25:15.173Z",
+        "complaintCategory": "general"
+      },
+      "complaintCategory": "general",
+      "riskAssessment": {
+        "level": "ROUTINE",
+        "indicators": [],
+        "evidence": [],
+        "rationale": [],
+        "action": "Standard consultation scheduling appropriate.",
+        "disclaimer": "Preliminary AI Risk Assessment — not a diagnosis. Requires evaluation by a qualified healthcare professional."
+      },
+      "candidateQuestions": [
+        {
+          "id": "past",
+          "attribute": "pastHistory",
+          "text": "Do you have any existing medical conditions such as high BP, diabetes, or heart disease?",
+          "score": 0.75,
+          "reason": "Attribute 'pastHistory' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.2
+          }
+        },
+        {
+          "id": "medicines",
+          "attribute": "medications",
+          "text": "Are you currently taking any prescription medicines or over-the-counter tablets?",
+          "score": 0.7,
+          "reason": "Attribute 'medications' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.15000000000000002
+          }
+        },
+        {
+          "id": "allergies",
+          "attribute": "allergies",
+          "text": "Do you have any known allergies to medicines, foods, or substances?",
+          "score": 0.65,
+          "reason": "Attribute 'allergies' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.09999999999999998
+          }
+        },
+        {
+          "id": "location",
+          "attribute": "location",
+          "text": "Where exactly in your body is the discomfort located?",
+          "score": 0.55,
+          "reason": "Attribute 'location' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0
+          }
+        },
+        {
+          "id": "radiation",
+          "attribute": "radiation",
+          "text": "Does the discomfort spread to your left arm, shoulder, neck, jaw, or back?",
+          "score": 0.55,
+          "reason": "Attribute 'radiation' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0
+          }
+        }
+      ],
+      "departmentConfidence": "MEDIUM",
+      "routingReasons": [
+        "General, systemic, or unspecialized primary symptom profile."
+      ]
+    },
+    {
+      "id": "CONS-DEMO-1790753115271-d2098272",
+      "displayId": "30/09/2026/003",
+      "patientId": "PAT-DEMO-1790753115181-0929cb01",
+      "patientName": "Sunita Rao (Demo)",
+      "doctorId": "doc-1",
+      "hospitalId": "hospital-1",
+      "department": "General Medicine",
+      "suggestedDepartment": "Gastroenterology",
+      "appointmentDate": "2026-09-30",
+      "otp": "956829",
+      "otpExpiresAt": "2026-09-30T08:25:15.271Z",
+      "otpAttempts": 0,
+      "state": "WAITING_FOR_DOCTOR",
+      "lifecycleState": "CASE_GENERATED",
+      "priority": "URGENT",
+      "language": "en",
+      "consentGiven": true,
+      "nextQuestion": null,
+      "structured": {
+        "patientName": {
+          "value": "Sunita Rao (Demo)",
+          "source": "Simulated registration"
+        },
+        "age": {
+          "value": 44,
+          "source": "Simulated registration"
+        },
+        "gender": {
+          "value": "Female",
+          "source": "Simulated registration"
+        },
+        "chiefComplaint": {
+          "value": "Persistent fever with weakness and vomiting.",
+          "source": "Patient initial statement",
+          "confidence": "HIGH"
+        },
+        "associatedSymptoms": {
+          "value": [
+            "Nausea / Vomiting",
+            "Fever / Chills",
+            "Fatigue / Weakness"
+          ],
+          "source": "Patient interview"
+        },
+        "duration": {
+          "value": "3 days",
+          "source": "Patient response to onset",
+          "confidence": "HIGH"
+        },
+        "onset": {
+          "value": "Ongoing for 3 days and getting progressively worse.",
+          "source": "Patient interview",
+          "confidence": "HIGH"
+        },
+        "severity": {
+          "value": 6,
+          "source": "Patient response to severity",
+          "confidence": "HIGH"
+        }
+      },
+      "vitals": {
+        "temperature": "102.2",
+        "bloodPressure": "110/70",
+        "heartRate": "108",
+        "spo2": "96"
+      },
+      "reports": [],
+      "responses": [
+        {
+          "id": "RESP-1790753115271-55b32166",
+          "questionId": "chief",
+          "question": "What main health problem or discomfort are you experiencing today?",
+          "answer": "Persistent fever with weakness and vomiting.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.271Z"
+        },
+        {
+          "id": "RESP-1790753115271-5b65256c",
+          "questionId": "onset",
+          "question": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "answer": "Ongoing for 3 days and getting progressively worse.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.271Z"
+        },
+        {
+          "id": "RESP-1790753115271-dc2eed2b",
+          "questionId": "severity",
+          "question": "On a scale from 1 to 10 (where 10 is unbearable), how severe is the discomfort?",
+          "answer": "Severity is around 6 out of 10.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.271Z"
+        },
+        {
+          "id": "RESP-1790753115272-a97652ba",
+          "questionId": "fever",
+          "question": "Have you checked your temperature, or are you experiencing chills or shivering?",
+          "answer": "Temperature reached 102 degrees F with chills.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.272Z"
+        }
+      ],
+      "redFlags": [
+        {
+          "id": "FLAG-1790753115272-12445499",
+          "trigger": "Elevated / Low Heart Rate: 108 BPM",
+          "evidence": "Heart rate recorded at 108 BPM",
+          "why": "Heart rate is outside standard resting boundaries.",
+          "severity": "URGENT",
+          "source": "Autonomous Risk Engine",
+          "timestamp": "2026-09-30T07:25:15.272Z"
+        }
+      ],
+      "decisionTrace": [
+        {
+          "timestamp": "2026-09-30T07:25:15.271Z",
+          "stage": "OBSERVE",
+          "event": "Case initialized",
+          "detail": "Patient Sunita Rao (Demo) registered for intake session.",
+          "action": "Ready for chief complaint inquiry"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.271Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [chief], Answer length: 44 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "chief",
+          "method": "text",
+          "answerLength": 44
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.271Z",
+          "stage": "ANALYZE",
+          "event": "Complaint category identified",
+          "detail": "Primary presentation mapped to [gastrointestinal]",
+          "action": "Tailoring dynamic clinical question roadmap",
+          "category": "gastrointestinal"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.271Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: URGENT. Warning indicators detected: 1",
+          "action": "Updating risk profile",
+          "riskLevel": "URGENT",
+          "indicators": [
+            "Elevated / Low Heart Rate: 108 BPM"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.271Z",
+          "stage": "QUESTION_SELECTION",
+          "event": "Next dynamic question selected",
+          "detail": "Next target: [onset]. Reason: Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. . Score: 1.3",
+          "action": "Querying patient in EN",
+          "selectedQuestion": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "score": 1.3,
+          "reason": "Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. ",
+          "candidates": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.271Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [onset], Answer length: 51 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "onset",
+          "method": "text",
+          "answerLength": 51
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.271Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: URGENT. Warning indicators detected: 1",
+          "action": "Updating risk profile",
+          "riskLevel": "URGENT",
+          "indicators": [
+            "Elevated / Low Heart Rate: 108 BPM"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.271Z",
+          "stage": "QUESTION_SELECTION",
+          "event": "Next dynamic question selected",
+          "detail": "Next target: [severity]. Reason: Attribute 'severity' is currently missing. Primary subjective clinical intensity metric. . Score: 1.2",
+          "action": "Querying patient in EN",
+          "selectedQuestion": "On a scale from 1 to 10 (where 10 is unbearable), how severe is the discomfort?",
+          "score": 1.2,
+          "reason": "Attribute 'severity' is currently missing. Primary subjective clinical intensity metric. ",
+          "candidates": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.272Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [severity], Answer length: 31 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "severity",
+          "method": "text",
+          "answerLength": 31
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.272Z",
+          "stage": "UNCERTAINTY_CHECK",
+          "event": "Linguistic uncertainty detected",
+          "detail": "Patient expressed uncertainty: \"around\"",
+          "action": "Tagging field with LOW confidence for physician review",
+          "uncertainties": [
+            {
+              "attribute": "severity",
+              "rawText": "Severity is around 6 out of 10.",
+              "confidence": "LOW",
+              "marker": "around"
+            }
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.272Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: URGENT. Warning indicators detected: 1",
+          "action": "Updating risk profile",
+          "riskLevel": "URGENT",
+          "indicators": [
+            "Elevated / Low Heart Rate: 108 BPM"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.272Z",
+          "stage": "QUESTION_SELECTION",
+          "event": "Next dynamic question selected",
+          "detail": "Next target: [location]. Reason: Attribute 'location' is currently missing. . Score: 0.85",
+          "action": "Querying patient in EN",
+          "selectedQuestion": "Where exactly in your body is the discomfort located?",
+          "score": 0.85,
+          "reason": "Attribute 'location' is currently missing. ",
+          "candidates": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.272Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [fever], Answer length: 46 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "fever",
+          "method": "text",
+          "answerLength": 46
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.272Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: URGENT. Warning indicators detected: 1",
+          "action": "Updating risk profile",
+          "riskLevel": "URGENT",
+          "indicators": [
+            "Elevated / Low Heart Rate: 108 BPM"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.272Z",
+          "stage": "QUESTION_SELECTION",
+          "event": "Next dynamic question selected",
+          "detail": "Next target: [location]. Reason: Attribute 'location' is currently missing. . Score: 0.85",
+          "action": "Querying patient in EN",
+          "selectedQuestion": "Where exactly in your body is the discomfort located?",
+          "score": 0.85,
+          "reason": "Attribute 'location' is currently missing. ",
+          "candidates": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.272Z",
+          "stage": "ACT",
+          "event": "Vital signs integrated and evaluated",
+          "detail": "Vitals: BP 110/70, HR 108, SpO2 96%",
+          "action": "Triage priority updated: URGENT -> URGENT",
+          "vitals": {
+            "temperature": "102.2",
+            "bloodPressure": "110/70",
+            "heartRate": "108",
+            "spo2": "96"
+          },
+          "previousPriority": "URGENT",
+          "newPriority": "URGENT"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.272Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: Gastroenterology (Confidence: HIGH)",
+          "action": "Attached routing rationale to case summary",
+          "department": "Gastroenterology",
+          "confidence": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.272Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: Gastroenterology (Confidence: HIGH)",
+          "action": "Attached routing rationale to case summary",
+          "department": "Gastroenterology",
+          "confidence": "HIGH"
+        }
+      ],
+      "missingInformation": [
+        "location",
+        "food",
+        "vomiting",
+        "fever",
+        "past",
+        "medicines",
+        "allergies"
+      ],
+      "summary": "============================================================\n  CAREPATH AI · CLINICAL PRE-CONSULTATION CASE SUMMARY\n  Intelligent Systems & Autonomous Computing\n============================================================\n\n1. PATIENT DEMOGRAPHICS\n   • Name: Sunita Rao (Demo)\n   • Age: 44\n   • Gender: Female\n   • Consultation Date: 2026-09-30\n\n2. CHIEF COMPLAINT & SYMPTOM PROFILE\n   • Primary Complaint: Persistent fever with weakness and vomiting.\n   • Category: GASTROINTESTINAL\n   • Duration / Onset: Ongoing for 3 days and getting progressively worse.\n   • Severity (1-10): 6\n   • Location: Not provided\n   • Radiation: Not provided\n   • Associated Symptoms: Nausea / Vomiting,Fever / Chills,Fatigue / Weakness\n\n3. MEDICAL BACKGROUND\n   • Past Medical History: Not provided\n   • Current Medications: Not provided\n   • Allergies: Not provided\n\n4. RECORDED VITAL SIGNS\n   • Blood Pressure: 110/70\n   • Heart Rate: 108 BPM\n   • SpO2: 96 %\n   • Temperature: 102.2 °F\n   • Respiratory Rate: Not recorded\n\n5. PRELIMINARY AI RISK ASSESSMENT\n   • Preliminary Risk Level: URGENT\n   • Suggested Department: Gastroenterology\n   • Detected Warning Indicators:\n     - ⚠️ Elevated / Low Heart Rate: 108 BPM\n   • Escalation Action: Prompt medical evaluation recommended.\n\n6. MISSING / UNCONFIRMED CLINICAL DATA\n   • location\n   • food\n   • vomiting\n   • fever\n   • past\n   • medicines\n   • allergies\n\n7. CLINICAL REVIEW NOTICE\n   * This AI case sheet is for decision-support and history taking only.\n   * The doctor remains the final diagnostic and clinical authority.\n============================================================",
+      "doctorNotes": "",
+      "prescription": {
+        "items": [],
+        "instructions": "",
+        "finalized": false,
+        "finalizedAt": null
+      },
+      "createdAt": "2026-09-30T07:25:15.271Z",
+      "updatedAt": "2026-09-30T07:25:15.272Z",
+      "patient": {
+        "id": "PAT-DEMO-1790753115181-0929cb01",
+        "name": "Sunita Rao (Demo)",
+        "age": 44,
+        "gender": "Female"
+      },
+      "caseState": {
+        "consultationId": "CONS-DEMO-1790753115271-d2098272",
+        "patientId": "PAT-DEMO-1790753115181-0929cb01",
+        "patientName": "Sunita Rao (Demo)",
+        "age": 44,
+        "gender": "Female",
+        "rawNarrative": "Persistent fever with weakness and vomiting. | Ongoing for 3 days and getting progressively worse. | Severity is around 6 out of 10. | Temperature reached 102 degrees F with chills.",
+        "extractedEntities": {
+          "symptoms": [],
+          "duration": "3 days",
+          "severity": 6,
+          "location": null,
+          "radiation": null,
+          "associatedSymptoms": [
+            "Nausea / Vomiting",
+            "Fever / Chills",
+            "Fatigue / Weakness"
+          ],
+          "history": [],
+          "medications": [],
+          "allergies": [],
+          "vitals": {
+            "temperature": "102.2",
+            "bloodPressure": "110/70",
+            "heartRate": "108",
+            "spo2": "96"
+          }
+        },
+        "missingInformation": [
+          "chief_complaint",
+          "character_and_location",
+          "medical_history"
+        ],
+        "uncertainInformation": [
+          {
+            "attribute": "severity",
+            "rawText": "Severity is around 6 out of 10.",
+            "confidence": "LOW",
+            "marker": "around"
+          }
+        ],
+        "contradictoryInformation": [],
+        "answeredQuestions": [
+          "chief",
+          "onset",
+          "severity",
+          "fever"
+        ],
+        "candidateQuestions": [],
+        "selectedQuestion": {
+          "id": "location",
+          "text": "Where exactly in your body is the discomfort located?",
+          "answerType": "text-or-voice",
+          "score": 0.85,
+          "reason": "Attribute 'location' is currently missing. "
+        },
+        "risk": {
+          "level": "URGENT",
+          "factors": [
+            "Elevated / Low Heart Rate: 108 BPM"
+          ]
+        },
+        "decisionTrace": [],
+        "questionCount": 4,
+        "status": "COMPLETED",
+        "completionReason": null,
+        "createdAt": "2026-09-30T07:25:15.271Z",
+        "updatedAt": "2026-09-30T07:25:15.272Z",
+        "complaintCategory": "gastrointestinal"
+      },
+      "complaintCategory": "gastrointestinal",
+      "riskAssessment": {
+        "level": "URGENT",
+        "indicators": [
+          "Elevated / Low Heart Rate: 108 BPM"
+        ],
+        "evidence": [
+          "Heart rate recorded at 108 BPM"
+        ],
+        "rationale": [
+          "Heart rate is outside standard resting boundaries."
+        ],
+        "action": "Prompt medical evaluation recommended.",
+        "disclaimer": "Preliminary AI Risk Assessment — not a diagnosis. Requires evaluation by a qualified healthcare professional."
+      },
+      "candidateQuestions": [
+        {
+          "id": "location",
+          "attribute": "location",
+          "text": "Where exactly in your body is the discomfort located?",
+          "score": 0.85,
+          "reason": "Attribute 'location' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.30000000000000004
+          }
+        },
+        {
+          "id": "food",
+          "attribute": "foodRelation",
+          "text": "Does the abdominal discomfort change before or after eating, or with specific foods?",
+          "score": 0.8,
+          "reason": "Attribute 'foodRelation' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.25
+          }
+        },
+        {
+          "id": "vomiting",
+          "attribute": "gastrointestinalSymptoms",
+          "text": "Have you experienced nausea, vomiting, loose stools, or difficulty keeping fluids down?",
+          "score": 0.75,
+          "reason": "Attribute 'gastrointestinalSymptoms' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.2
+          }
+        },
+        {
+          "id": "past",
+          "attribute": "pastHistory",
+          "text": "Do you have any existing medical conditions such as high BP, diabetes, or heart disease?",
+          "score": 0.65,
+          "reason": "Attribute 'pastHistory' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.09999999999999998
+          }
+        },
+        {
+          "id": "allergies",
+          "attribute": "allergies",
+          "text": "Do you have any known allergies to medicines, foods, or substances?",
+          "score": 0.6,
+          "reason": "Attribute 'allergies' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.05
+          }
+        }
+      ],
+      "departmentConfidence": "HIGH",
+      "routingReasons": [
+        "Symptoms focus on abdominal, digestive, or bowel concerns."
+      ]
+    },
+    {
+      "id": "CONS-DEMO-1790753115352-c614f2b0",
+      "displayId": "30/09/2026/004",
+      "patientId": "PAT-DEMO-1790753115274-a36b71c4",
+      "patientName": "Vikram Malhotra (Demo)",
+      "doctorId": "doc-1",
+      "hospitalId": "hospital-1",
+      "department": "Emergency / Cardiology",
+      "suggestedDepartment": "Emergency / Cardiology",
+      "appointmentDate": "2026-09-30",
+      "otp": "896626",
+      "otpExpiresAt": "2026-09-30T08:25:15.352Z",
+      "otpAttempts": 0,
+      "state": "WAITING_FOR_DOCTOR",
+      "lifecycleState": "CASE_GENERATED",
+      "priority": "HIGH",
+      "language": "en",
+      "consentGiven": true,
+      "nextQuestion": null,
+      "structured": {
+        "patientName": {
+          "value": "Vikram Malhotra (Demo)",
+          "source": "Simulated registration"
+        },
+        "age": {
+          "value": 58,
+          "source": "Simulated registration"
+        },
+        "gender": {
+          "value": "Male",
+          "source": "Simulated registration"
+        },
+        "chiefComplaint": {
+          "value": "Severe crushing chest discomfort radiating to left arm with difficulty breathing.",
+          "source": "Patient initial statement",
+          "confidence": "HIGH"
+        },
+        "severity": {
+          "value": 8,
+          "source": "Patient response to breathing",
+          "confidence": "HIGH"
+        },
+        "associatedSymptoms": {
+          "value": [
+            "Shortness of breath",
+            "Sweating / Diaphoresis",
+            "Dizziness / Lightheadedness"
+          ],
+          "source": "Patient interview"
+        },
+        "duration": {
+          "value": "8 years",
+          "source": "Patient response to past",
+          "confidence": "HIGH"
+        },
+        "onset": {
+          "value": "Started suddenly 45 minutes ago while climbing stairs.",
+          "source": "Patient interview",
+          "confidence": "HIGH"
+        }
+      },
+      "vitals": {
+        "temperature": "98.4",
+        "bloodPressure": "165/102",
+        "heartRate": "116",
+        "spo2": "93"
+      },
+      "reports": [],
+      "responses": [
+        {
+          "id": "RESP-1790753115352-fe29b61e",
+          "questionId": "chief",
+          "question": "What main health problem or discomfort are you experiencing today?",
+          "answer": "Severe crushing chest discomfort radiating to left arm with difficulty breathing.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.352Z"
+        },
+        {
+          "id": "RESP-1790753115353-ef5ae31b",
+          "questionId": "onset",
+          "question": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "answer": "Started suddenly 45 minutes ago while climbing stairs.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.353Z"
+        },
+        {
+          "id": "RESP-1790753115353-00fba35e",
+          "questionId": "severity",
+          "question": "On a scale from 1 to 10 (where 10 is unbearable), how severe is the discomfort?",
+          "answer": "Very severe, 9 out of 10.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.353Z"
+        },
+        {
+          "id": "RESP-1790753115353-bc9f2ff5",
+          "questionId": "breathing",
+          "question": "Are you experiencing any shortness of breath, cold sweating, or dizziness?",
+          "answer": "Severe shortness of breath, cold sweating, and feeling dizzy.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.353Z"
+        },
+        {
+          "id": "RESP-1790753115353-ad357759",
+          "questionId": "past",
+          "question": "Do you have any existing medical conditions such as high BP, diabetes, or heart disease?",
+          "answer": "Known hypertension and diabetes for 8 years.",
+          "method": "text",
+          "source": "Patient text response",
+          "timestamp": "2026-09-30T07:25:15.353Z"
+        }
+      ],
+      "redFlags": [
+        {
+          "id": "FLAG-1790753115353-e8a5b8a5",
+          "trigger": "Acute chest discomfort with high severity or autonomic symptoms",
+          "evidence": "Severe crushing chest discomfort radiating to left arm with difficulty breathing.",
+          "why": "Reported symptoms may indicate acute coronary or thoracic emergency. Immediate clinical evaluation is required.",
+          "severity": "HIGH",
+          "source": "Autonomous Risk Engine",
+          "timestamp": "2026-09-30T07:25:15.353Z"
+        },
+        {
+          "id": "FLAG-1790753115353-e0acdf06",
+          "trigger": "Respiratory compromise / low oxygen saturation",
+          "evidence": "Severe crushing chest discomfort radiating to left arm with difficulty breathing. (SpO2: 93%)",
+          "why": "Significant breathing difficulty or SpO2 < 92% requires prompt clinical triage and airway evaluation.",
+          "severity": "HIGH",
+          "source": "Autonomous Risk Engine",
+          "timestamp": "2026-09-30T07:25:15.353Z"
+        },
+        {
+          "id": "FLAG-1790753115353-31e987cb",
+          "trigger": "Elevated / Low Heart Rate: 116 BPM",
+          "evidence": "Heart rate recorded at 116 BPM",
+          "why": "Heart rate is outside standard resting boundaries.",
+          "severity": "HIGH",
+          "source": "Autonomous Risk Engine",
+          "timestamp": "2026-09-30T07:25:15.353Z"
+        },
+        {
+          "id": "FLAG-1790753115353-9d1fc97c",
+          "trigger": "Elevated Blood Pressure (165/102 mmHg)",
+          "evidence": "Blood pressure: 165/102",
+          "why": "Blood pressure elevation noted.",
+          "severity": "HIGH",
+          "source": "Autonomous Risk Engine",
+          "timestamp": "2026-09-30T07:25:15.353Z"
+        }
+      ],
+      "decisionTrace": [
+        {
+          "timestamp": "2026-09-30T07:25:15.352Z",
+          "stage": "OBSERVE",
+          "event": "Case initialized",
+          "detail": "Patient Vikram Malhotra (Demo) registered for intake session.",
+          "action": "Ready for chief complaint inquiry"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.352Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [chief], Answer length: 81 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "chief",
+          "method": "text",
+          "answerLength": 81
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "ANALYZE",
+          "event": "Complaint category identified",
+          "detail": "Primary presentation mapped to [cardiovascular]",
+          "action": "Tailoring dynamic clinical question roadmap",
+          "category": "cardiovascular"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: HIGH. Warning indicators detected: 4",
+          "action": "Triggering clinical escalation protocol",
+          "riskLevel": "HIGH",
+          "indicators": [
+            "Acute chest discomfort with high severity or autonomic symptoms",
+            "Respiratory compromise / low oxygen saturation",
+            "Elevated / Low Heart Rate: 116 BPM",
+            "Elevated Blood Pressure (165/102 mmHg)"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "QUESTION_SELECTION",
+          "event": "Next dynamic question selected",
+          "detail": "Next target: [onset]. Reason: Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. . Score: 1.3",
+          "action": "Querying patient in EN",
+          "selectedQuestion": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "score": 1.3,
+          "reason": "Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. ",
+          "candidates": []
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [onset], Answer length: 54 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "onset",
+          "method": "text",
+          "answerLength": 54
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: HIGH. Warning indicators detected: 4",
+          "action": "Triggering clinical escalation protocol",
+          "riskLevel": "HIGH",
+          "indicators": [
+            "Acute chest discomfort with high severity or autonomic symptoms",
+            "Respiratory compromise / low oxygen saturation",
+            "Elevated / Low Heart Rate: 116 BPM",
+            "Elevated Blood Pressure (165/102 mmHg)"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "DECIDE",
+          "event": "Clinical interview accelerated",
+          "detail": "High risk indicators detected; shortening interview for urgent clinical review",
+          "action": "Accelerating triage handover to medical team",
+          "riskLevel": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: Emergency / Cardiology (Confidence: HIGH)",
+          "action": "Attached routing rationale to case summary",
+          "department": "Emergency / Cardiology",
+          "confidence": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "TERMINATE",
+          "event": "Autonomous interview terminated",
+          "detail": "Stopping reason: HIGH_RISK_ESCALATION",
+          "action": "Transferred case to clinician review queue",
+          "completionReason": "HIGH_RISK_ESCALATION",
+          "questionCount": 2
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [severity], Answer length: 25 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "severity",
+          "method": "text",
+          "answerLength": 25
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: HIGH. Warning indicators detected: 4",
+          "action": "Triggering clinical escalation protocol",
+          "riskLevel": "HIGH",
+          "indicators": [
+            "Acute chest discomfort with high severity or autonomic symptoms",
+            "Respiratory compromise / low oxygen saturation",
+            "Elevated / Low Heart Rate: 116 BPM",
+            "Elevated Blood Pressure (165/102 mmHg)"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "DECIDE",
+          "event": "Clinical interview accelerated",
+          "detail": "High risk indicators detected; shortening interview for urgent clinical review",
+          "action": "Accelerating triage handover to medical team",
+          "riskLevel": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: Emergency / Cardiology (Confidence: HIGH)",
+          "action": "Attached routing rationale to case summary",
+          "department": "Emergency / Cardiology",
+          "confidence": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "TERMINATE",
+          "event": "Autonomous interview terminated",
+          "detail": "Stopping reason: HIGH_RISK_ESCALATION",
+          "action": "Transferred case to clinician review queue",
+          "completionReason": "HIGH_RISK_ESCALATION",
+          "questionCount": 3
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [breathing], Answer length: 61 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "breathing",
+          "method": "text",
+          "answerLength": 61
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: HIGH. Warning indicators detected: 4",
+          "action": "Triggering clinical escalation protocol",
+          "riskLevel": "HIGH",
+          "indicators": [
+            "Acute chest discomfort with high severity or autonomic symptoms",
+            "Respiratory compromise / low oxygen saturation",
+            "Elevated / Low Heart Rate: 116 BPM",
+            "Elevated Blood Pressure (165/102 mmHg)"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "DECIDE",
+          "event": "Clinical interview accelerated",
+          "detail": "High risk indicators detected; shortening interview for urgent clinical review",
+          "action": "Accelerating triage handover to medical team",
+          "riskLevel": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: Emergency / Cardiology (Confidence: HIGH)",
+          "action": "Attached routing rationale to case summary",
+          "department": "Emergency / Cardiology",
+          "confidence": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "TERMINATE",
+          "event": "Autonomous interview terminated",
+          "detail": "Stopping reason: HIGH_RISK_ESCALATION",
+          "action": "Transferred case to clinician review queue",
+          "completionReason": "HIGH_RISK_ESCALATION",
+          "questionCount": 4
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "OBSERVE",
+          "event": "Patient response received",
+          "detail": "Question: [past], Answer length: 44 chars via text",
+          "action": "Initiating symptom and entity extraction",
+          "questionId": "past",
+          "method": "text",
+          "answerLength": 44
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "CONTRADICTION_CHECK",
+          "event": "Testimony contradiction detected",
+          "detail": "Contradictory onset timeline: previously stated '45 minutes', but later reported '8 years'.",
+          "action": "Registering contradiction in case state for clarification planning",
+          "contradictions": [
+            {
+              "attribute": "duration",
+              "previousValue": "45 minutes",
+              "currentValue": "8 years",
+              "explanation": "Contradictory onset timeline: previously stated '45 minutes', but later reported '8 years'.",
+              "timestamp": "2026-09-30T07:25:15.353Z"
+            }
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "RISK_ASSESSMENT",
+          "event": "Risk assessment evaluated",
+          "detail": "Preliminary Risk Level: HIGH. Warning indicators detected: 4",
+          "action": "Triggering clinical escalation protocol",
+          "riskLevel": "HIGH",
+          "indicators": [
+            "Acute chest discomfort with high severity or autonomic symptoms",
+            "Respiratory compromise / low oxygen saturation",
+            "Elevated / Low Heart Rate: 116 BPM",
+            "Elevated Blood Pressure (165/102 mmHg)"
+          ]
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "DECIDE",
+          "event": "Clinical interview accelerated",
+          "detail": "High risk indicators detected; shortening interview for urgent clinical review",
+          "action": "Accelerating triage handover to medical team",
+          "riskLevel": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: Emergency / Cardiology (Confidence: HIGH)",
+          "action": "Attached routing rationale to case summary",
+          "department": "Emergency / Cardiology",
+          "confidence": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "TERMINATE",
+          "event": "Autonomous interview terminated",
+          "detail": "Stopping reason: HIGH_RISK_ESCALATION",
+          "action": "Transferred case to clinician review queue",
+          "completionReason": "HIGH_RISK_ESCALATION",
+          "questionCount": 5
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "ACT",
+          "event": "Vital signs integrated and evaluated",
+          "detail": "Vitals: BP 165/102, HR 116, SpO2 93%",
+          "action": "Triage priority updated: HIGH -> HIGH",
+          "vitals": {
+            "temperature": "98.4",
+            "bloodPressure": "165/102",
+            "heartRate": "116",
+            "spo2": "93"
+          },
+          "previousPriority": "HIGH",
+          "newPriority": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: Emergency / Cardiology (Confidence: HIGH)",
+          "action": "Attached routing rationale to case summary",
+          "department": "Emergency / Cardiology",
+          "confidence": "HIGH"
+        },
+        {
+          "timestamp": "2026-09-30T07:25:15.353Z",
+          "stage": "ACT",
+          "event": "Autonomous department routing",
+          "detail": "Suggested department: Emergency / Cardiology (Confidence: HIGH)",
+          "action": "Attached routing rationale to case summary",
+          "department": "Emergency / Cardiology",
+          "confidence": "HIGH"
+        }
+      ],
+      "missingInformation": [
+        "location",
+        "radiation",
+        "breathing",
+        "fever",
+        "past",
+        "medicines",
+        "allergies"
+      ],
+      "summary": "============================================================\n  CAREPATH AI · CLINICAL PRE-CONSULTATION CASE SUMMARY\n  Intelligent Systems & Autonomous Computing\n============================================================\n\n1. PATIENT DEMOGRAPHICS\n   • Name: Vikram Malhotra (Demo)\n   • Age: 58\n   • Gender: Male\n   • Consultation Date: 2026-09-30\n\n2. CHIEF COMPLAINT & SYMPTOM PROFILE\n   • Primary Complaint: Severe crushing chest discomfort radiating to left arm with difficulty breathing.\n   • Category: CARDIOVASCULAR\n   • Duration / Onset: Started suddenly 45 minutes ago while climbing stairs.\n   • Severity (1-10): 8\n   • Location: Not provided\n   • Radiation: Not provided\n   • Associated Symptoms: Shortness of breath,Sweating / Diaphoresis,Dizziness / Lightheadedness\n\n3. MEDICAL BACKGROUND\n   • Past Medical History: Not provided\n   • Current Medications: Not provided\n   • Allergies: Not provided\n\n4. RECORDED VITAL SIGNS\n   • Blood Pressure: 165/102\n   • Heart Rate: 116 BPM\n   • SpO2: 93 %\n   • Temperature: 98.4 °F\n   • Respiratory Rate: Not recorded\n\n5. PRELIMINARY AI RISK ASSESSMENT\n   • Preliminary Risk Level: HIGH PRIORITY\n   • Suggested Department: Emergency / Cardiology\n   • Detected Warning Indicators:\n     - ⚠️ Acute chest discomfort with high severity or autonomic symptoms\n     - ⚠️ Respiratory compromise / low oxygen saturation\n     - ⚠️ Elevated / Low Heart Rate: 116 BPM\n     - ⚠️ Elevated Blood Pressure (165/102 mmHg)\n   • Escalation Action: Immediate medical staff notification & priority triage required.\n\n6. MISSING / UNCONFIRMED CLINICAL DATA\n   • location\n   • radiation\n   • breathing\n   • fever\n   • past\n   • medicines\n   • allergies\n\n7. CLINICAL REVIEW NOTICE\n   * This AI case sheet is for decision-support and history taking only.\n   * The doctor remains the final diagnostic and clinical authority.\n============================================================",
+      "doctorNotes": "",
+      "prescription": {
+        "items": [],
+        "instructions": "",
+        "finalized": false,
+        "finalizedAt": null
+      },
+      "createdAt": "2026-09-30T07:25:15.352Z",
+      "updatedAt": "2026-09-30T07:25:15.353Z",
+      "patient": {
+        "id": "PAT-DEMO-1790753115274-a36b71c4",
+        "name": "Vikram Malhotra (Demo)",
+        "age": 58,
+        "gender": "Male"
+      },
+      "caseState": {
+        "consultationId": "CONS-DEMO-1790753115352-c614f2b0",
+        "patientId": "PAT-DEMO-1790753115274-a36b71c4",
+        "patientName": "Vikram Malhotra (Demo)",
+        "age": 58,
+        "gender": "Male",
+        "rawNarrative": "Severe crushing chest discomfort radiating to left arm with difficulty breathing. | Started suddenly 45 minutes ago while climbing stairs. | Very severe, 9 out of 10. | Severe shortness of breath, cold sweating, and feeling dizzy. | Known hypertension and diabetes for 8 years.",
+        "extractedEntities": {
+          "symptoms": [],
+          "duration": "45 minutes",
+          "severity": 8,
+          "location": null,
+          "radiation": null,
+          "associatedSymptoms": [
+            "Shortness of breath",
+            "Sweating / Diaphoresis",
+            "Dizziness / Lightheadedness"
+          ],
+          "history": [],
+          "medications": [],
+          "allergies": [],
+          "vitals": {
+            "temperature": "98.4",
+            "bloodPressure": "165/102",
+            "heartRate": "116",
+            "spo2": "93"
+          }
+        },
+        "missingInformation": [
+          "chief_complaint",
+          "character_and_location",
+          "medical_history"
+        ],
+        "uncertainInformation": [],
+        "contradictoryInformation": [
+          {
+            "attribute": "duration",
+            "previousValue": "45 minutes",
+            "currentValue": "8 years",
+            "explanation": "Contradictory onset timeline: previously stated '45 minutes', but later reported '8 years'.",
+            "timestamp": "2026-09-30T07:25:15.353Z"
+          }
+        ],
+        "answeredQuestions": [
+          "chief",
+          "onset",
+          "severity",
+          "breathing",
+          "past"
+        ],
+        "candidateQuestions": [],
+        "selectedQuestion": {
+          "id": "onset",
+          "text": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "answerType": "text-or-voice",
+          "score": 1.3,
+          "reason": "Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. "
+        },
+        "risk": {
+          "level": "HIGH",
+          "factors": [
+            "Acute chest discomfort with high severity or autonomic symptoms",
+            "Respiratory compromise / low oxygen saturation",
+            "Elevated / Low Heart Rate: 116 BPM",
+            "Elevated Blood Pressure (165/102 mmHg)"
+          ]
+        },
+        "decisionTrace": [],
+        "questionCount": 5,
+        "status": "ESCALATED",
+        "completionReason": "HIGH_RISK_ESCALATION",
+        "createdAt": "2026-09-30T07:25:15.352Z",
+        "updatedAt": "2026-09-30T07:25:15.353Z",
+        "complaintCategory": "cardiovascular"
+      },
+      "complaintCategory": "cardiovascular",
+      "riskAssessment": {
+        "level": "HIGH",
+        "indicators": [
+          "Acute chest discomfort with high severity or autonomic symptoms",
+          "Respiratory compromise / low oxygen saturation",
+          "Elevated / Low Heart Rate: 116 BPM",
+          "Elevated Blood Pressure (165/102 mmHg)"
+        ],
+        "evidence": [
+          "Severe crushing chest discomfort radiating to left arm with difficulty breathing.",
+          "Severe crushing chest discomfort radiating to left arm with difficulty breathing. (SpO2: 93%)",
+          "Heart rate recorded at 116 BPM",
+          "Blood pressure: 165/102"
+        ],
+        "rationale": [
+          "Reported symptoms may indicate acute coronary or thoracic emergency. Immediate clinical evaluation is required.",
+          "Significant breathing difficulty or SpO2 < 92% requires prompt clinical triage and airway evaluation.",
+          "Heart rate is outside standard resting boundaries.",
+          "Blood pressure elevation noted."
+        ],
+        "action": "Immediate medical staff notification & priority triage required.",
+        "disclaimer": "Preliminary AI Risk Assessment — not a diagnosis. Requires evaluation by a qualified healthcare professional."
+      },
+      "candidateQuestions": [
+        {
+          "id": "onset",
+          "attribute": "onset",
+          "text": "When did this discomfort or problem start, and was it sudden or gradual?",
+          "score": 1.3,
+          "reason": "Attribute 'onset' is currently missing. Foundational temporal timeline and acuity anchor. ",
+          "breakdown": {
+            "informationGain": 0.55,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.4
+          }
+        },
+        {
+          "id": "radiation",
+          "attribute": "radiation",
+          "text": "Does the discomfort spread to your left arm, shoulder, neck, jaw, or back?",
+          "score": 1.15,
+          "reason": "Attribute 'radiation' is currently missing. Critical for acute cardiovascular/respiratory triage stratification. ",
+          "breakdown": {
+            "informationGain": 0.30000000000000004,
+            "riskRelevance": 0.2,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.30000000000000004
+          }
+        },
+        {
+          "id": "breathing",
+          "attribute": "breathing",
+          "text": "Are you experiencing any shortness of breath, cold sweating, or dizziness?",
+          "score": 1.1,
+          "reason": "Attribute 'breathing' is currently missing. Critical for acute cardiovascular/respiratory triage stratification. ",
+          "breakdown": {
+            "informationGain": 0.30000000000000004,
+            "riskRelevance": 0.2,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.25
+          }
+        },
+        {
+          "id": "past",
+          "attribute": "pastHistory",
+          "text": "Do you have any existing medical conditions such as high BP, diabetes, or heart disease?",
+          "score": 0.75,
+          "reason": "Attribute 'pastHistory' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.2
+          }
+        },
+        {
+          "id": "medicines",
+          "attribute": "medications",
+          "text": "Are you currently taking any prescription medicines or over-the-counter tablets?",
+          "score": 0.7,
+          "reason": "Attribute 'medications' is currently missing. ",
+          "breakdown": {
+            "informationGain": 0.2,
+            "riskRelevance": 0,
+            "missingness": 0.35,
+            "contradictionResolution": 0,
+            "symptomRelevance": 0.15000000000000002
+          }
+        }
+      ],
+      "departmentConfidence": "HIGH",
+      "routingReasons": [
+        "Acute cardiovascular warning indicators detected requiring rapid triage."
+      ]
+    },
+    {
+      "id": "CONS-1790753200441-5eb1009c",
+      "displayId": "30/09/2026/005",
+      "patientId": "PAT-1790753200223-b158931b",
+      "patientName": "Patient A",
+      "doctorId": "doc-1",
+      "hospitalId": "hospital-1",
+      "department": "General Medicine",
+      "suggestedDepartment": "General Medicine",
+      "appointmentDate": "2026-09-30",
+      "otp": "344222",
+      "otpExpiresAt": "2026-09-30T08:26:40.441Z",
+      "otpAttempts": 0,
+      "state": "OTP_GENERATED",
+      "lifecycleState": "NEW",
+      "priority": "ROUTINE",
+      "language": null,
+      "consentGiven": false,
+      "nextQuestion": null,
+      "structured": {
+        "patientName": {
+          "value": "Patient A",
+          "source": "Patient registration"
+        },
+        "age": {
+          "value": 25,
+          "source": "Patient registration"
+        },
+        "gender": {
+          "value": "Prefer not to say",
+          "source": "Patient registration"
+        }
+      },
+      "vitals": {},
+      "reports": [],
+      "responses": [],
+      "redFlags": [],
+      "decisionTrace": [
+        {
+          "timestamp": "2026-09-30T07:26:40.442Z",
+          "stage": "OBSERVE",
+          "event": "Case initialized",
+          "detail": "Patient Patient A registered for intake session.",
+          "action": "Ready for chief complaint inquiry"
+        }
+      ],
+      "missingInformation": [],
+      "summary": "",
+      "doctorNotes": "",
+      "prescription": {
+        "items": [],
+        "instructions": "",
+        "finalized": false,
+        "finalizedAt": null
+      },
+      "createdAt": "2026-09-30T07:26:40.441Z",
+      "updatedAt": "2026-09-30T07:26:40.441Z",
+      "patient": {
+        "id": "PAT-1790753200223-b158931b",
+        "name": "Patient A",
+        "age": 25,
+        "gender": "Prefer not to say"
+      },
+      "caseState": {
+        "consultationId": "CONS-1790753200441-5eb1009c",
+        "patientId": "PAT-1790753200223-b158931b",
+        "patientName": "Patient A",
+        "age": 25,
+        "gender": "Prefer not to say",
+        "rawNarrative": "",
+        "extractedEntities": {
+          "symptoms": [],
+          "duration": null,
+          "severity": null,
+          "location": null,
+          "radiation": null,
+          "associatedSymptoms": [],
+          "history": [],
+          "medications": [],
+          "allergies": [],
+          "vitals": {}
+        },
+        "missingInformation": [
+          "chief_complaint",
+          "onset_and_duration",
+          "severity_score",
+          "character_and_location",
+          "associated_warning_signs",
+          "medical_history"
+        ],
+        "uncertainInformation": [],
+        "contradictoryInformation": [],
+        "answeredQuestions": [],
+        "candidateQuestions": [],
+        "selectedQuestion": null,
+        "risk": {
+          "level": "ROUTINE",
+          "score": 0,
+          "factors": []
+        },
+        "decisionTrace": [],
+        "questionCount": 0,
+        "status": "QUESTIONING",
+        "completionReason": null,
+        "createdAt": "2026-09-30T07:26:40.441Z",
+        "updatedAt": "2026-09-30T07:26:40.441Z"
+      }
+    },
+    {
+      "id": "CONS-1790753261513-39ff7f64",
+      "displayId": "30/09/2026/006",
+      "patientId": "PAT-1790753261239-a1931840",
+      "patientName": "Patient A",
+      "doctorId": "doc-1",
+      "hospitalId": "hospital-1",
+      "department": "General Medicine",
+      "suggestedDepartment": "General Medicine",
+      "appointmentDate": "2026-09-30",
+      "otp": "860942",
+      "otpExpiresAt": "2026-09-30T08:27:41.513Z",
+      "otpAttempts": 0,
+      "state": "OTP_GENERATED",
+      "lifecycleState": "NEW",
+      "priority": "ROUTINE",
+      "language": null,
+      "consentGiven": false,
+      "nextQuestion": null,
+      "structured": {
+        "patientName": {
+          "value": "Patient A",
+          "source": "Patient registration"
+        },
+        "age": {
+          "value": 25,
+          "source": "Patient registration"
+        },
+        "gender": {
+          "value": "Prefer not to say",
+          "source": "Patient registration"
+        }
+      },
+      "vitals": {},
+      "reports": [],
+      "responses": [],
+      "redFlags": [],
+      "decisionTrace": [
+        {
+          "timestamp": "2026-09-30T07:27:41.513Z",
+          "stage": "OBSERVE",
+          "event": "Case initialized",
+          "detail": "Patient Patient A registered for intake session.",
+          "action": "Ready for chief complaint inquiry"
+        }
+      ],
+      "missingInformation": [],
+      "summary": "",
+      "doctorNotes": "",
+      "prescription": {
+        "items": [],
+        "instructions": "",
+        "finalized": false,
+        "finalizedAt": null
+      },
+      "createdAt": "2026-09-30T07:27:41.513Z",
+      "updatedAt": "2026-09-30T07:27:41.513Z",
+      "patient": {
+        "id": "PAT-1790753261239-a1931840",
+        "name": "Patient A",
+        "age": 25,
+        "gender": "Prefer not to say"
+      },
+      "caseState": {
+        "consultationId": "CONS-1790753261513-39ff7f64",
+        "patientId": "PAT-1790753261239-a1931840",
+        "patientName": "Patient A",
+        "age": 25,
+        "gender": "Prefer not to say",
+        "rawNarrative": "",
+        "extractedEntities": {
+          "symptoms": [],
+          "duration": null,
+          "severity": null,
+          "location": null,
+          "radiation": null,
+          "associatedSymptoms": [],
+          "history": [],
+          "medications": [],
+          "allergies": [],
+          "vitals": {}
+        },
+        "missingInformation": [
+          "chief_complaint",
+          "onset_and_duration",
+          "severity_score",
+          "character_and_location",
+          "associated_warning_signs",
+          "medical_history"
+        ],
+        "uncertainInformation": [],
+        "contradictoryInformation": [],
+        "answeredQuestions": [],
+        "candidateQuestions": [],
+        "selectedQuestion": null,
+        "risk": {
+          "level": "ROUTINE",
+          "score": 0,
+          "factors": []
+        },
+        "decisionTrace": [],
+        "questionCount": 0,
+        "status": "QUESTIONING",
+        "completionReason": null,
+        "createdAt": "2026-09-30T07:27:41.513Z",
+        "updatedAt": "2026-09-30T07:27:41.513Z"
+      }
+    },
+    {
+      "id": "CONS-1790754171349-d1b4e659",
+      "displayId": "30/09/2026/007",
+      "patientId": "PAT-1790754171087-745f7c24",
+      "patientName": "Patient A",
+      "doctorId": "doc-1",
+      "hospitalId": "hospital-1",
+      "department": "General Medicine",
+      "suggestedDepartment": "General Medicine",
+      "appointmentDate": "2026-09-30",
+      "otp": "257213",
+      "otpExpiresAt": "2026-09-30T08:42:51.350Z",
+      "otpAttempts": 0,
+      "state": "OTP_GENERATED",
+      "lifecycleState": "NEW",
+      "priority": "ROUTINE",
+      "language": null,
+      "consentGiven": false,
+      "nextQuestion": null,
+      "structured": {
+        "patientName": {
+          "value": "Patient A",
+          "source": "Patient registration"
+        },
+        "age": {
+          "value": 25,
+          "source": "Patient registration"
+        },
+        "gender": {
+          "value": "Prefer not to say",
+          "source": "Patient registration"
+        }
+      },
+      "vitals": {},
+      "reports": [],
+      "responses": [],
+      "redFlags": [],
+      "decisionTrace": [
+        {
+          "timestamp": "2026-09-30T07:42:51.350Z",
+          "stage": "OBSERVE",
+          "event": "Case initialized",
+          "detail": "Patient Patient A registered for intake session.",
+          "action": "Ready for chief complaint inquiry"
+        }
+      ],
+      "missingInformation": [],
+      "summary": "",
+      "doctorNotes": "",
+      "prescription": {
+        "items": [],
+        "instructions": "",
+        "finalized": false,
+        "finalizedAt": null
+      },
+      "createdAt": "2026-09-30T07:42:51.350Z",
+      "updatedAt": "2026-09-30T07:42:51.350Z",
+      "patient": {
+        "id": "PAT-1790754171087-745f7c24",
+        "name": "Patient A",
+        "age": 25,
+        "gender": "Prefer not to say"
+      },
+      "caseState": {
+        "consultationId": "CONS-1790754171349-d1b4e659",
+        "patientId": "PAT-1790754171087-745f7c24",
+        "patientName": "Patient A",
+        "age": 25,
+        "gender": "Prefer not to say",
+        "rawNarrative": "",
+        "extractedEntities": {
+          "symptoms": [],
+          "duration": null,
+          "severity": null,
+          "location": null,
+          "radiation": null,
+          "associatedSymptoms": [],
+          "history": [],
+          "medications": [],
+          "allergies": [],
+          "vitals": {}
+        },
+        "missingInformation": [
+          "chief_complaint",
+          "onset_and_duration",
+          "severity_score",
+          "character_and_location",
+          "associated_warning_signs",
+          "medical_history"
+        ],
+        "uncertainInformation": [],
+        "contradictoryInformation": [],
+        "answeredQuestions": [],
+        "candidateQuestions": [],
+        "selectedQuestion": null,
+        "risk": {
+          "level": "ROUTINE",
+          "score": 0,
+          "factors": []
+        },
+        "decisionTrace": [],
+        "questionCount": 0,
+        "status": "QUESTIONING",
+        "completionReason": null,
+        "createdAt": "2026-09-30T07:42:51.350Z",
+        "updatedAt": "2026-09-30T07:42:51.350Z"
+      }
+    }
+  ],
+  "alerts": [
+    {
+      "id": "ALERT-1790753114430-eb1d9cc7",
+      "consultationId": "CONS-CYCLE-01",
+      "displayId": "CONS-CYCLE-01",
+      "patientName": "Kavita Singh",
+      "suggestedDepartment": "Emergency",
+      "severity": "HIGH",
+      "indicators": [
+        "Acute chest discomfort with high severity or autonomic symptoms",
+        "Mild to moderate shortness of breath"
+      ],
+      "evidence": [
+        "It is an 8 out of 10 and I can't catch my breath"
+      ],
+      "acknowledged": false,
+      "acknowledgedBy": null,
+      "acknowledgedAt": null,
+      "createdAt": "2026-09-30T07:25:14.430Z"
+    },
+    {
+      "id": "ALERT-1790753114435-cbf3ccb3",
+      "consultationId": "CONS-VITALS-01",
+      "displayId": "CONS-VITALS-01",
+      "patientName": "Anonymous Patient",
+      "suggestedDepartment": "Emergency",
+      "severity": "HIGH",
+      "indicators": [
+        "Respiratory compromise / low oxygen saturation",
+        "Elevated / Low Heart Rate: 128 BPM"
+      ],
+      "evidence": [
+        "Cough and breathing tightness (SpO2: 88%)",
+        "Heart rate recorded at 128 BPM"
+      ],
+      "acknowledged": false,
+      "acknowledgedBy": null,
+      "acknowledgedAt": null,
+      "createdAt": "2026-09-30T07:25:14.435Z"
+    },
+    {
+      "id": "ALERT-1790753115353-6a481282",
+      "consultationId": "CONS-DEMO-1790753115352-c614f2b0",
+      "displayId": "30/09/2026/004",
+      "patientName": "Vikram Malhotra (Demo)",
+      "doctorId": "doc-1",
+      "hospitalId": "hospital-1",
+      "suggestedDepartment": "Emergency / Cardiology",
+      "severity": "HIGH",
+      "indicators": [
+        "Acute chest discomfort with high severity or autonomic symptoms",
+        "Respiratory compromise / low oxygen saturation",
+        "Elevated / Low Heart Rate: 116 BPM",
+        "Elevated Blood Pressure (165/102 mmHg)"
+      ],
+      "evidence": [
+        "Severe crushing chest discomfort radiating to left arm with difficulty breathing.",
+        "Severe crushing chest discomfort radiating to left arm with difficulty breathing. (SpO2: 93%)",
+        "Heart rate recorded at 116 BPM",
+        "Blood pressure: 165/102"
+      ],
+      "acknowledged": false,
+      "acknowledgedBy": null,
+      "acknowledgedAt": null,
+      "createdAt": "2026-09-30T07:25:15.353Z"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "FB-1790752995711-324408a4",
+      "consultationId": "CONS-TEST-001",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Sharma",
+      "aiPriority": "HIGH",
+      "doctorPriority": "URGENT",
+      "priorityChanged": true,
+      "aiDepartment": "Cardiology",
+      "doctorDepartment": "General Medicine",
+      "departmentChanged": true,
+      "feedbackNotes": "Patient has musculoskeletal chest wall pain, not acute ischemia.",
+      "timestamp": "2026-09-30T07:23:15.712Z"
+    },
+    {
+      "id": "FB-1790753115050-11bf901f",
+      "consultationId": "CONS-1790753114999-2986d7c7",
+      "doctorId": "doc-1",
+      "doctorName": "Dr. Sharma",
+      "aiPriority": "HIGH",
+      "doctorPriority": "HIGH",
+      "priorityChanged": false,
+      "aiDepartment": "Emergency / Cardiology",
+      "doctorDepartment": "Emergency / Cardiology",
+      "departmentChanged": false,
+      "feedbackNotes": "Confirmed acute coronary triage pathway.",
+      "timestamp": "2026-09-30T07:25:15.050Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "AUDIT-1790753114430-3f93d703",
+      "action": "EMERGENCY_STAFF_ALERT_DISPATCHED",
+      "actorId": "SYSTEM",
+      "actorRole": "AUTONOMOUS_ENGINE",
+      "consultationId": "CONS-CYCLE-01",
+      "metadata": {
+        "indicators": [
+          "Acute chest discomfort with high severity or autonomic symptoms",
+          "Mild to moderate shortness of breath"
+        ],
+        "suggestedDepartment": "Emergency"
+      },
+      "timestamp": "2026-09-30T07:25:14.430Z"
+    },
+    {
+      "id": "AUDIT-1790753114435-83526369",
+      "action": "EMERGENCY_STAFF_ALERT_DISPATCHED",
+      "actorId": "SYSTEM",
+      "actorRole": "AUTONOMOUS_ENGINE",
+      "consultationId": "CONS-VITALS-01",
+      "metadata": {
+        "indicators": [
+          "Respiratory compromise / low oxygen saturation",
+          "Elevated / Low Heart Rate: 128 BPM"
+        ],
+        "suggestedDepartment": "Emergency"
+      },
+      "timestamp": "2026-09-30T07:25:14.435Z"
+    },
+    {
+      "id": "AUDIT-1790753114829-32ae7888",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790753114678-401cc5a4",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:25:14.829Z"
+    },
+    {
+      "id": "AUDIT-1790753114982-73cc0d4f",
+      "action": "LOGIN",
+      "actorId": "doc-1",
+      "actorRole": "DOCTOR",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:25:14.982Z"
+    },
+    {
+      "id": "AUDIT-1790753115000-74ca9170",
+      "action": "OTP_GENERATED",
+      "actorId": "PAT-1790753114678-401cc5a4",
+      "actorRole": "PATIENT",
+      "consultationId": "CONS-1790753114999-2986d7c7",
+      "metadata": {
+        "doctorId": "doc-1",
+        "displayId": "01/10/2026/001"
+      },
+      "timestamp": "2026-09-30T07:25:15.000Z"
+    },
+    {
+      "id": "AUDIT-1790753115005-8e522213",
+      "action": "CASE_TAKING_STARTED",
+      "actorId": "PAT-1790753114678-401cc5a4",
+      "actorRole": "PATIENT",
+      "consultationId": "CONS-1790753114999-2986d7c7",
+      "metadata": {
+        "language": "en"
+      },
+      "timestamp": "2026-09-30T07:25:15.005Z"
+    },
+    {
+      "id": "AUDIT-1790753115016-8f8bf6a0",
+      "action": "PATIENT_RESPONSE_PROCESSED",
+      "actorId": "PAT-1790753114678-401cc5a4",
+      "actorRole": "PATIENT",
+      "consultationId": "CONS-1790753114999-2986d7c7",
+      "metadata": {
+        "questionId": "chief",
+        "method": "text",
+        "priority": "HIGH",
+        "lifecycleState": "INTERVIEWING"
+      },
+      "timestamp": "2026-09-30T07:25:15.017Z"
+    },
+    {
+      "id": "AUDIT-1790753115023-cc55a3cf",
+      "action": "VITALS_UPDATED",
+      "actorId": "PAT-1790753114678-401cc5a4",
+      "actorRole": "PATIENT",
+      "consultationId": "CONS-1790753114999-2986d7c7",
+      "metadata": {
+        "temperature": "98.6",
+        "bloodPressure": "160/100",
+        "heartRate": "112",
+        "spo2": "93"
+      },
+      "timestamp": "2026-09-30T07:25:15.023Z"
+    },
+    {
+      "id": "AUDIT-1790753115037-f58354d5",
+      "action": "OTP_VERIFIED_DOCTOR_ACCESS_GRANTED",
+      "actorId": "doc-1",
+      "actorRole": "DOCTOR",
+      "consultationId": "CONS-1790753114999-2986d7c7",
+      "metadata": {},
+      "timestamp": "2026-09-30T07:25:15.037Z"
+    },
+    {
+      "id": "AUDIT-1790753115050-317fa0ba",
+      "action": "DOCTOR_OVERRIDE_RECORDED",
+      "actorId": "doc-1",
+      "actorRole": "DOCTOR",
+      "consultationId": "CONS-1790753114999-2986d7c7",
+      "metadata": {
+        "id": "FB-1790753115050-11bf901f",
+        "consultationId": "CONS-1790753114999-2986d7c7",
+        "doctorId": "doc-1",
+        "doctorName": "Dr. Sharma",
+        "aiPriority": "HIGH",
+        "doctorPriority": "HIGH",
+        "priorityChanged": false,
+        "aiDepartment": "Emergency / Cardiology",
+        "doctorDepartment": "Emergency / Cardiology",
+        "departmentChanged": false,
+        "feedbackNotes": "Confirmed acute coronary triage pathway.",
+        "timestamp": "2026-09-30T07:25:15.050Z"
+      },
+      "timestamp": "2026-09-30T07:25:15.050Z"
+    },
+    {
+      "id": "AUDIT-1790753115056-8f43863b",
+      "action": "PRESCRIPTION_SAVED",
+      "actorId": "doc-1",
+      "actorRole": "DOCTOR",
+      "consultationId": "CONS-1790753114999-2986d7c7",
+      "metadata": {},
+      "timestamp": "2026-09-30T07:25:15.056Z"
+    },
+    {
+      "id": "AUDIT-1790753115058-f85b5bbe",
+      "action": "CONSULTATION_ENDED_ACCESS_REVOKED",
+      "actorId": "doc-1",
+      "actorRole": "DOCTOR",
+      "consultationId": "CONS-1790753114999-2986d7c7",
+      "metadata": {},
+      "timestamp": "2026-09-30T07:25:15.058Z"
+    },
+    {
+      "id": "AUDIT-1790753115174-793a8c02",
+      "action": "DEMO_SIMULATION_EXECUTED",
+      "actorId": "DEMO_SYSTEM",
+      "actorRole": "SYSTEM",
+      "consultationId": "CONS-DEMO-1790753115169-a52def21",
+      "metadata": {
+        "scenario": "routine",
+        "priority": "ROUTINE",
+        "suggestedDepartment": "General Medicine"
+      },
+      "timestamp": "2026-09-30T07:25:15.174Z"
+    },
+    {
+      "id": "AUDIT-1790753115272-73abd41e",
+      "action": "DEMO_SIMULATION_EXECUTED",
+      "actorId": "DEMO_SYSTEM",
+      "actorRole": "SYSTEM",
+      "consultationId": "CONS-DEMO-1790753115271-d2098272",
+      "metadata": {
+        "scenario": "urgent",
+        "priority": "URGENT",
+        "suggestedDepartment": "Gastroenterology"
+      },
+      "timestamp": "2026-09-30T07:25:15.272Z"
+    },
+    {
+      "id": "AUDIT-1790753115353-9486d01b",
+      "action": "EMERGENCY_STAFF_ALERT_DISPATCHED",
+      "actorId": "SYSTEM",
+      "actorRole": "AUTONOMOUS_ENGINE",
+      "consultationId": "CONS-DEMO-1790753115352-c614f2b0",
+      "metadata": {
+        "indicators": [
+          "Acute chest discomfort with high severity or autonomic symptoms",
+          "Respiratory compromise / low oxygen saturation",
+          "Elevated / Low Heart Rate: 116 BPM",
+          "Elevated Blood Pressure (165/102 mmHg)"
+        ],
+        "suggestedDepartment": "Emergency / Cardiology"
+      },
+      "timestamp": "2026-09-30T07:25:15.353Z"
+    },
+    {
+      "id": "AUDIT-1790753115353-53d51d48",
+      "action": "DEMO_SIMULATION_EXECUTED",
+      "actorId": "DEMO_SYSTEM",
+      "actorRole": "SYSTEM",
+      "consultationId": "CONS-DEMO-1790753115352-c614f2b0",
+      "metadata": {
+        "scenario": "high-priority",
+        "priority": "HIGH",
+        "suggestedDepartment": "Emergency / Cardiology"
+      },
+      "timestamp": "2026-09-30T07:25:15.353Z"
+    },
+    {
+      "id": "AUDIT-1790753200207-777c4a6b",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790753200065-5123a201",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:26:40.207Z"
+    },
+    {
+      "id": "AUDIT-1790753200328-17795762",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790753200223-b158931b",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:26:40.328Z"
+    },
+    {
+      "id": "AUDIT-1790753200432-481a8f93",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790753200334-4dd1e67c",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:26:40.433Z"
+    },
+    {
+      "id": "AUDIT-1790753200442-08b290ee",
+      "action": "OTP_GENERATED",
+      "actorId": "PAT-1790753200223-b158931b",
+      "actorRole": "PATIENT",
+      "consultationId": "CONS-1790753200441-5eb1009c",
+      "metadata": {
+        "doctorId": "doc-1",
+        "displayId": "30/09/2026/005"
+      },
+      "timestamp": "2026-09-30T07:26:40.442Z"
+    },
+    {
+      "id": "AUDIT-1790753200535-450dbce6",
+      "action": "LOGIN",
+      "actorId": "doc-1",
+      "actorRole": "DOCTOR",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:26:40.535Z"
+    },
+    {
+      "id": "AUDIT-1790753261229-c8fe5104",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790753261061-76c96828",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:27:41.229Z"
+    },
+    {
+      "id": "AUDIT-1790753261370-e73e0b33",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790753261239-a1931840",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:27:41.370Z"
+    },
+    {
+      "id": "AUDIT-1790753261504-031d5096",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790753261374-86d2df3d",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:27:41.504Z"
+    },
+    {
+      "id": "AUDIT-1790753261513-cad837ac",
+      "action": "OTP_GENERATED",
+      "actorId": "PAT-1790753261239-a1931840",
+      "actorRole": "PATIENT",
+      "consultationId": "CONS-1790753261513-39ff7f64",
+      "metadata": {
+        "doctorId": "doc-1",
+        "displayId": "30/09/2026/006"
+      },
+      "timestamp": "2026-09-30T07:27:41.513Z"
+    },
+    {
+      "id": "AUDIT-1790753261625-0bca936f",
+      "action": "LOGIN",
+      "actorId": "doc-1",
+      "actorRole": "DOCTOR",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:27:41.625Z"
+    },
+    {
+      "id": "AUDIT-1790754171070-b0ec4d70",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790754170940-88897e68",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:42:51.070Z"
+    },
+    {
+      "id": "AUDIT-1790754171187-5621f332",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790754171087-745f7c24",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:42:51.187Z"
+    },
+    {
+      "id": "AUDIT-1790754171339-bc6197db",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790754171192-3a6de9ed",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:42:51.339Z"
+    },
+    {
+      "id": "AUDIT-1790754171350-09359dda",
+      "action": "OTP_GENERATED",
+      "actorId": "PAT-1790754171087-745f7c24",
+      "actorRole": "PATIENT",
+      "consultationId": "CONS-1790754171349-d1b4e659",
+      "metadata": {
+        "doctorId": "doc-1",
+        "displayId": "30/09/2026/007"
+      },
+      "timestamp": "2026-09-30T07:42:51.350Z"
+    },
+    {
+      "id": "AUDIT-1790754171476-fcde7962",
+      "action": "LOGIN",
+      "actorId": "doc-1",
+      "actorRole": "DOCTOR",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:42:51.476Z"
+    }
+  ]
+}

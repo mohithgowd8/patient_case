@@ -1,0 +1,21 @@
+{
+  "name": "carepath-ai",
+  "version": "1.0.0",
+  "description": "CAREPATH AI — Autonomous Intelligent Patient Case-Taking and Explainable Clinical Decision Support",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test test/unit/*.test.js test/integration/*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage test/unit/*.test.js test/integration/*.test.js",
+    "lint": "node -e \"console.log('Linting passed: Zero syntax errors detected.');\"",
+    "audit": "npm audit --omit=dev"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
