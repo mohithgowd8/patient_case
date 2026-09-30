@@ -199,49 +199,152 @@ function getMissingAttributes(caseState) {
 }
 
 /**
- * Select next question dynamically
+ * Calculates deterministic information-gain-oriented question score.
+ * 
+ * Formula:
+ * questionScore = informationGain + riskRelevance + missingness + contradictionResolution + symptomRelevance - alreadyAskedPenalty
+ * 
+ * Invariants:
+ * - Already answered questions receive -100 penalty
+ * - Questions resolving active contradictions or acute risks receive priority weight
+ * 
+ * Complexity: O(1) per question
+ * 
+ * @param {Object} candidateQ
+ * @param {Object} caseState
+ * @returns {{score: number, breakdown: Object, reason: string}}
+ */
+function calculateQuestionScore(candidateQ, caseState) {
+  const answeredIds = new Set((caseState.responses || []).map(r => r.questionId));
+  if (answeredIds.has(candidateQ.id)) {
+    return { score: -100, breakdown: {}, reason: "Already answered" };
+  }
+
+  let informationGain = 0.20;
+  let riskRelevance = 0.0;
+  let missingness = 0.0;
+  let contradictionResolution = 0.0;
+  let symptomRelevance = 0.0;
+  let reason = "";
+
+  const category = (caseState.complaintCategory || "general").toLowerCase();
+
+  // 1. Missingness: target clinical attribute unrecorded
+  const targetAttr = candidateQ.attribute;
+  if (targetAttr) {
+    if (!caseState.structured?.[targetAttr]?.value) {
+      missingness = 0.35;
+      reason += `Attribute '${targetAttr}' is currently missing. `;
+    } else {
+      return { score: -50, breakdown: {}, reason: "Attribute already opportunistically captured" };
+    }
+  }
+
+  // 2. Foundational anamnesis: onset and severity are primary clinical timeline fundamentals
+  if (candidateQ.id === "onset") {
+    informationGain += 0.35;
+    reason += "Foundational temporal timeline and acuity anchor. ";
+  } else if (candidateQ.id === "severity") {
+    informationGain += 0.30;
+    reason += "Primary subjective clinical intensity metric. ";
+  } else if (candidateQ.id === "radiation" || candidateQ.id === "breathing") {
+    if (category === "cardiovascular" || category === "respiratory") {
+      riskRelevance = 0.20;
+      informationGain += 0.10;
+      reason += "Critical for acute cardiovascular/respiratory triage stratification. ";
+    }
+  }
+
+  // 3. Contradiction Resolution: if patient testimony contains conflict on this attribute
+  const contradictions = caseState.contradictoryInformation || [];
+  if (contradictions.length > 0 && targetAttr) {
+    if (contradictions.some(c => c.attribute === targetAttr || c.attribute?.includes(targetAttr))) {
+      contradictionResolution = 0.40;
+      reason += `Required to clarify detected patient testimony contradiction on '${targetAttr}'. `;
+    }
+  }
+
+  // 4. Symptom Relevance: complaint category alignment
+  const priorityList = categoryPriorityMap[category] || categoryPriorityMap.general;
+  const priorityIndex = priorityList.indexOf(candidateQ.id);
+  if (priorityIndex !== -1) {
+    symptomRelevance = Math.max(0.05, 0.40 - (priorityIndex * 0.05));
+  }
+
+  const score = Math.round((informationGain + riskRelevance + missingness + contradictionResolution + symptomRelevance) * 100) / 100;
+  if (!reason) reason = `High yield clinical entity inquiry for ${candidateQ.id}.`;
+
+  return {
+    score,
+    breakdown: { informationGain, riskRelevance, missingness, contradictionResolution, symptomRelevance },
+    reason
+  };
+}
+
+/**
+ * Select next question dynamically using autonomous question planning.
+ * 
+ * Preconditions:
+ * - caseState must be an object with structured and responses arrays
+ * 
+ * Guarantees:
+ * - Never returns an already answered question
+ * - Returns null when safe questioning depth or high risk termination reached
+ * - Stores candidate scores and reasons in caseState for auditability
+ * 
+ * @param {Object} caseState 
+ * @param {string} [language="en"] 
+ * @returns {Object|null}
  */
 function selectNextQuestion(caseState, language = "en") {
-  const answeredIds = new Set((caseState.responses || []).map(r => r.questionId));
-  const category = caseState.complaintCategory || "general";
-  const priorityList = categoryPriorityMap[category] || categoryPriorityMap.general;
-
   // If High Risk escalation condition met, stop asking more questions
   if (caseState.priority === "HIGH" && (caseState.responses || []).length >= 3) {
     return null;
   }
 
-  // Maximum safe autonomous interview depth (6-7 targeted questions)
+  // Maximum safe autonomous interview depth
   if ((caseState.responses || []).length >= 7) {
     return null;
   }
 
-  // Find first clinically prioritized question that hasn't been answered yet
-  for (const qId of priorityList) {
-    if (!answeredIds.has(qId)) {
-      // Check if question's target attribute was already extracted from earlier text
-      const targetAttr = questionsCatalog[qId]?.attribute;
-      if (targetAttr && caseState.structured?.[targetAttr]?.value) {
-        continue;
-      }
+  const scoredCandidates = [];
 
-      const qObj = questionsCatalog[qId];
-      if (qObj) {
-        return {
-          id: qObj.id,
-          text: qObj.translations[language] || qObj.translations.en,
-          answerType: "text-or-voice"
-        };
-      }
+  for (const [qId, qObj] of Object.entries(questionsCatalog)) {
+    if (qId === "chief") continue; // Chief complaint asked at intake initialization
+    const scoreData = calculateQuestionScore(qObj, caseState);
+    if (scoreData.score > 0) {
+      scoredCandidates.push({
+        id: qObj.id,
+        attribute: qObj.attribute,
+        text: qObj.translations[language] || qObj.translations.en,
+        score: scoreData.score,
+        reason: scoreData.reason,
+        breakdown: scoreData.breakdown
+      });
     }
   }
 
-  return null;
+  scoredCandidates.sort((a, b) => b.score - a.score);
+  caseState.candidateQuestions = scoredCandidates.slice(0, 5);
+
+  if (scoredCandidates.length === 0) {
+    return null;
+  }
+
+  const best = scoredCandidates[0];
+  return {
+    id: best.id,
+    text: best.text,
+    answerType: "text-or-voice",
+    score: best.score,
+    reason: best.reason
+  };
 }
 
 module.exports = {
   questionsCatalog,
   categoryPriorityMap,
   getMissingAttributes,
+  calculateQuestionScore,
   selectNextQuestion
 };

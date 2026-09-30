@@ -34,6 +34,7 @@ const { recordFeedback, analyzeFeedbackPatterns } = require("./engines/feedbackE
 const { questionsCatalog } = require("./engines/questionSelectionEngine");
 const { assessRisk } = require("./engines/riskAssessmentEngine");
 const { generateCaseSummary } = require("./engines/caseSummaryEngine");
+const { runFixedQuestionBaseline } = require("./engines/baselineEngine");
 const config = require("./engines/config");
 const { createRateLimiter } = require("./engines/rateLimiter");
 const { performanceMiddleware, getPerformanceSummary } = require("./engines/performanceMonitor");
@@ -206,6 +207,8 @@ function consultationForPatient(c) {
     summary: c.summary || "",
     redFlags: c.redFlags || [],
     riskAssessment: c.riskAssessment || null,
+    caseState: c.caseState || null,
+    benchmark: runFixedQuestionBaseline(c),
     decisionTrace: c.decisionTrace || [],
     missingInformation: c.missingInformation || [],
     responses: c.responses || [],
@@ -249,6 +252,8 @@ function doctorCaseView(c) {
     summary,
     redFlags: c.redFlags || [],
     riskAssessment: c.riskAssessment || null,
+    caseState: c.caseState || null,
+    benchmark: runFixedQuestionBaseline(c),
     decisionTrace: c.decisionTrace || [],
     missingInformation: c.missingInformation || [],
     responses: c.responses || [],
@@ -343,6 +348,8 @@ function fullCaseDetailView(c) {
     responses: c.responses || [],
     redFlags: c.redFlags || [],
     riskAssessment: c.riskAssessment || null,
+    caseState: c.caseState || null,
+    benchmark: runFixedQuestionBaseline(c),
     decisionTrace: c.decisionTrace || [],
     missingInformation: c.missingInformation || [],
     summary,
@@ -1426,6 +1433,35 @@ app.post("/api/demo/simulate", simulationLimiter, async (req, res) => {
       email: doctor.email,
       name: doctor.name
     }
+  });
+});
+
+/* ------------------------------------------------------------------ */
+/* Benchmark & Evaluation API                                         */
+/* ------------------------------------------------------------------ */
+
+/**
+ * GET /api/benchmark/:consultationId
+ * Returns empirical benchmark metrics comparing the autonomous case taking
+ * session against traditional fixed-question 20-question baseline intake.
+ */
+app.get("/api/benchmark/:consultationId", auth, (req, res) => {
+  const consultation = findConsultation(req.params.consultationId);
+  if (!consultation) {
+    return sendError(res, 404, "NOT_FOUND", "Consultation not found");
+  }
+
+  // Check authorization (patient owner, doctor, or admin)
+  if (req.user.role === "PATIENT" && consultation.patientId !== req.user.id) {
+    return sendError(res, 403, "FORBIDDEN", "Unauthorized access to consultation benchmark");
+  }
+
+  const benchmark = runFixedQuestionBaseline(consultation);
+  res.json({
+    ok: true,
+    consultationId: consultation.id,
+    displayId: consultation.displayId || consultation.id,
+    benchmark
   });
 });
 

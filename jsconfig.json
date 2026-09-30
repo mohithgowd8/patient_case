@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2022",
+    "checkJs": true,
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": [
+    "server.js",
+    "api/**/*.js",
+    "engines/**/*.js",
+    "public/**/*.js",
+    "test/**/*.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

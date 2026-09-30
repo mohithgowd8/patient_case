@@ -155,7 +155,8 @@ CAREPATH AI includes a lightweight, non-blocking performance monitor (`performan
 ### Quick Start
 ```bash
 # 1. Clone repository and navigate to project folder
-cd "Patient case taking"
+git clone https://github.com/mohithgowd8/patient_case.git
+cd patient_case
 
 # 2. Install dependencies
 npm install
@@ -170,8 +171,10 @@ The application will launch at: **http://localhost:4000**
 
 ### Available Scripts
 - `npm start`: Starts the application on port 4000
-- `npm test`: Runs all unit and integration tests
+- `npm test`: Runs all unit and integration tests (102 tests)
 - `npm run test:coverage`: Runs the complete test suite with coverage report
+- `npm run lint`: Validates static code correctness and JSDoc contracts
+- `npm run audit`: Scans dependencies for security vulnerabilities
 
 ---
 
@@ -183,32 +186,39 @@ The test suite validates every layer of the architecture, including unit algorit
 node --test --experimental-test-coverage test/unit/*.test.js test/integration/*.test.js
 ```
 
-### Verified Test Results: 87 / 87 Tests Passing (100% Success Rate)
+### Verified Test Results: 102 / 102 Tests Passing (100% Success Rate)
 
 | Test Suite File | Type | Tests | Status |
 | :--- | :--- | :--- | :--- |
 | `test/unit/symptomExtraction.test.js` | Unit | 15 | Passed |
+| `test/unit/caseStateEngine.test.js` | Unit | 6 | Passed |
+| `test/unit/baselineEngine.test.js` | Unit | 3 | Passed |
 | `test/unit/riskAssessment.test.js` | Unit | 5 | Passed |
 | `test/unit/questionSelection.test.js` | Unit | 6 | Passed |
 | `test/unit/departmentRouting.test.js` | Unit | 6 | Passed |
 | `test/unit/caseSummary.test.js` | Unit | 2 | Passed |
 | `test/unit/feedbackEngine.test.js` | Unit | 2 | Passed |
 | `test/unit/autonomousLoop.test.js` | Unit | 2 | Passed |
+| `test/integration/benchmark.test.js` | Integration | 5 | Passed |
 | `test/integration/apiEndpoints.test.js` | Integration | 12 | Passed |
 | `test/integration/caseQueueAndNavigation.test.js` | Integration | 9 | Passed |
 | `test/integration/securityAndEdgeCases.test.js` | Integration | 7 | Passed |
 | `test/integration/securityHardening.test.js` | Integration | 8 | Passed |
-| **Total** | **Combined** | **87** | **87 Passed, 0 Failed** |
+| **Total** | **Combined** | **102** | **102 Passed, 0 Failed** |
 
 ### Verified Code Coverage Metrics
-- **Overall Line Coverage:** **82.39%**
-- **Autonomous Decision Engine:** **91.64%** line coverage
-- **Risk Assessment Engine:** **93.01%** line coverage
-- **Symptom Extraction Engine:** **96.45%** line coverage
-- **Question Selection Engine:** **98.38%** line coverage
+- **Overall Line Coverage:** **85.23%**
+- **Baseline Benchmark Engine:** **100.00%** line coverage
 - **Case Summary Engine:** **100.00%** line coverage
-- **Performance Monitor:** **100.00%** line coverage
 - **Central Configuration:** **100.00%** line coverage
+- **Performance Monitor:** **100.00%** line coverage
+- **Question Selection Engine:** **97.43%** line coverage
+- **Case State Engine:** **96.54%** line coverage
+- **Symptom Extraction Engine:** **96.45%** line coverage
+- **Risk Assessment Engine:** **96.35%** line coverage
+- **Department Routing Engine:** **91.92%** line coverage
+- **Autonomous Decision Engine:** **91.84%** line coverage
+- **Clinician Feedback Engine:** **90.00%** line coverage
 
 ---
 

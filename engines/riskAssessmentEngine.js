@@ -36,9 +36,15 @@ function assessRisk(caseState) {
   };
 
   // 1. Cardiovascular / Acute Chest Syndrome Red Flags
-  const isChest = chief.includes("chest") || chief.includes("heart") || chief.includes("छाती") || chief.includes("सीने") || chief.includes("ఛాతీ") || chief.includes("గుండె");
+  const isChest = chief.includes("chest") || chief.includes("heart") || /chest|heart|छाती|सीने|ఛాతీ|గుండె/i.test(allText);
+  const bpMatchInitial = String(vitals.bloodPressure || "").match(/(\d+)\s*\/\s*(\d+)/);
+  const sysInit = bpMatchInitial ? parseInt(bpMatchInitial[1], 10) : 0;
+  const diaInit = bpMatchInitial ? parseInt(bpMatchInitial[2], 10) : 0;
+  const hasHypertensiveChest = isChest && (sysInit >= 160 || diaInit >= 100);
+
   const hasSevereChest = isChest && (
     severityVal >= 7 ||
+    hasHypertensiveChest ||
     /breath|sweat|jaw|arm|shoulder|dizzy|severe|10|9|8/i.test(allText)
   );
 
