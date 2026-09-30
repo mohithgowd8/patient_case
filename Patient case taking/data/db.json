@@ -140,6 +140,36 @@
       "age": 25,
       "gender": "Prefer not to say",
       "createdAt": "2026-09-30T06:12:41.647Z"
+    },
+    {
+      "id": "PAT-1790749582002-29ed7556",
+      "role": "PATIENT",
+      "name": "Restricted Patient",
+      "email": "restricted.1790749581995@example.com",
+      "password": "$2a$10$RK3MbUa8DNK6Q5vPq/1RU.imljdsL7KxIvLkBQxeOT3rcsYLhYd.2",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T06:26:22.114Z"
+    },
+    {
+      "id": "PAT-1790749582125-3ac7e4ce",
+      "role": "PATIENT",
+      "name": "Patient A",
+      "email": "pata.1790749582123@example.com",
+      "password": "$2a$10$8.UK3BXM9h8sYGllGxKJf.ixY8Ktz7VCFJDSJbh1hAEPfkOkxzOUG",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T06:26:22.205Z"
+    },
+    {
+      "id": "PAT-1790749582212-f31796ee",
+      "role": "PATIENT",
+      "name": "Patient B",
+      "email": "patb.1790749582209@example.com",
+      "password": "$2a$10$S8bbcW/RN9Pt5A5sdjmF9u62wM07KU7bE.cMst072RnN3O/nDh1gi",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T06:26:22.284Z"
     }
   ],
   "hospitals": [
@@ -1530,6 +1560,69 @@
         "age": 25,
         "gender": "Prefer not to say"
       }
+    },
+    {
+      "id": "CONS-1790749582287-39a48268",
+      "displayId": "30/09/2026/008",
+      "patientId": "PAT-1790749582125-3ac7e4ce",
+      "patientName": "Patient A",
+      "doctorId": "doc-1",
+      "hospitalId": "hospital-1",
+      "department": "General Medicine",
+      "suggestedDepartment": "General Medicine",
+      "appointmentDate": "2026-09-30",
+      "otp": "953248",
+      "otpExpiresAt": "2026-09-30T07:26:22.287Z",
+      "otpAttempts": 0,
+      "state": "OTP_GENERATED",
+      "lifecycleState": "NEW",
+      "priority": "ROUTINE",
+      "language": null,
+      "consentGiven": false,
+      "nextQuestion": null,
+      "structured": {
+        "patientName": {
+          "value": "Patient A",
+          "source": "Patient registration"
+        },
+        "age": {
+          "value": 25,
+          "source": "Patient registration"
+        },
+        "gender": {
+          "value": "Prefer not to say",
+          "source": "Patient registration"
+        }
+      },
+      "vitals": {},
+      "reports": [],
+      "responses": [],
+      "redFlags": [],
+      "decisionTrace": [
+        {
+          "timestamp": "2026-09-30T06:26:22.287Z",
+          "event": "Case initialized",
+          "detail": "Patient Patient A registered for intake session.",
+          "action": "Ready for chief complaint inquiry"
+        }
+      ],
+      "missingInformation": [],
+      "summary": "",
+      "doctorNotes": "",
+      "prescription": {
+        "items": [],
+        "instructions": "",
+        "finalized": false,
+        "finalizedAt": null
+      },
+      "createdAt": "2026-09-30T06:26:22.287Z",
+      "updatedAt": "2026-09-30T06:26:22.287Z",
+      "patient": {
+        "id": "PAT-1790749582125-3ac7e4ce",
+        "name": "Patient A",
+        "age": 25,
+        "gender": "Prefer not to say"
+      }
     }
   ],
   "alerts": [
@@ -1873,6 +1966,54 @@
       "consultationId": null,
       "metadata": {},
       "timestamp": "2026-09-30T06:12:41.732Z"
+    },
+    {
+      "id": "AUDIT-1790749582116-903039b9",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790749582002-29ed7556",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T06:26:22.116Z"
+    },
+    {
+      "id": "AUDIT-1790749582205-8025e108",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790749582125-3ac7e4ce",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T06:26:22.205Z"
+    },
+    {
+      "id": "AUDIT-1790749582284-d27b2e8a",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790749582212-f31796ee",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T06:26:22.284Z"
+    },
+    {
+      "id": "AUDIT-1790749582287-38bb5bb1",
+      "action": "OTP_GENERATED",
+      "actorId": "PAT-1790749582125-3ac7e4ce",
+      "actorRole": "PATIENT",
+      "consultationId": "CONS-1790749582287-39a48268",
+      "metadata": {
+        "doctorId": "doc-1",
+        "displayId": "30/09/2026/008"
+      },
+      "timestamp": "2026-09-30T06:26:22.287Z"
+    },
+    {
+      "id": "AUDIT-1790749582361-b41cb763",
+      "action": "LOGIN",
+      "actorId": "doc-1",
+      "actorRole": "DOCTOR",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T06:26:22.361Z"
     }
   ]
 }

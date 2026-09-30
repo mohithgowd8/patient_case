@@ -1,0 +1,14 @@
+{
+  "name": "carepath-ai-platform",
+  "version": "1.0.0",
+  "description": "CAREPATH AI - Autonomous Patient Case-Taking & Clinical Decision-Support Assistant",
+  "main": "Patient case taking/server.js",
+  "scripts": {
+    "start": "node \"Patient case taking/server.js\"",
+    "test": "cd \"Patient case taking\" && npm test"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.19.2"
+  }
+}

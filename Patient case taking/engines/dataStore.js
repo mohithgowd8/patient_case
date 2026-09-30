@@ -9,7 +9,13 @@ const path = require("path");
 const crypto = require("crypto");
 const bcrypt = require("bcryptjs");
 
-const DB_PATH = path.join(__dirname, "..", "data", "db.json");
+const os = require("os");
+
+const isVercel = Boolean(process.env.VERCEL);
+const BUNDLED_DB_PATH = path.join(__dirname, "..", "data", "db.json");
+const DB_PATH = isVercel
+  ? path.join(os.tmpdir(), "carepath_db.json")
+  : BUNDLED_DB_PATH;
 
 let memoryDb = null;
 const sessions = new Map();
@@ -99,7 +105,15 @@ function initDatabase() {
 
   let shouldWrite = false;
   if (!fs.existsSync(DB_PATH)) {
-    memoryDb = createInitialDb();
+    if (isVercel && fs.existsSync(BUNDLED_DB_PATH)) {
+      try {
+        memoryDb = JSON.parse(fs.readFileSync(BUNDLED_DB_PATH, "utf8"));
+      } catch {
+        memoryDb = createInitialDb();
+      }
+    } else {
+      memoryDb = createInitialDb();
+    }
     shouldWrite = true;
   } else {
     try {

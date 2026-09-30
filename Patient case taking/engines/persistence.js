@@ -8,8 +8,13 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-const DB_PATH = path.join(__dirname, "..", "data", "db.json");
-const TMP_PATH = path.join(__dirname, "..", "data", "db.json.tmp");
+const os = require("node:os");
+
+const isVercel = Boolean(process.env.VERCEL);
+const DB_PATH = isVercel
+  ? path.join(os.tmpdir(), "carepath_db.json")
+  : path.join(__dirname, "..", "data", "db.json");
+const TMP_PATH = `${DB_PATH}.tmp`;
 
 let memoryDb = null;
 let writeInProgress = false;
