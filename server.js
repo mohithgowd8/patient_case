@@ -951,8 +951,14 @@ app.patch("/api/cases/:id/override", (req, res) => {
 });
 
 /* ------------------------------------------------------------------ */
-/* System Performance & AI Health APIs                                */
-/* ------------------------------------------------------------------ */
+app.get(["/health", "/api/health"], (req, res) => {
+  res.json({
+    status: "ok",
+    service: "carepath-ai",
+    uptime: Math.round(process.uptime()),
+    timestamp: new Date().toISOString()
+  });
+});
 
 app.get("/api/performance/metrics", (req, res) => {
   res.json(getPerformanceSummary());

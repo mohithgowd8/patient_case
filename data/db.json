@@ -130,6 +130,36 @@
       "age": 25,
       "gender": "Prefer not to say",
       "createdAt": "2026-09-30T07:27:41.504Z"
+    },
+    {
+      "id": "PAT-1790754170940-88897e68",
+      "role": "PATIENT",
+      "name": "Restricted Patient",
+      "email": "restricted.1790754170937@example.com",
+      "password": "$2a$10$PvKBd6Qv2rtBCPxaFQeutufzG4Sjvp4/gzR5ytHGgjWfn1EIjuVFG",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:42:51.066Z"
+    },
+    {
+      "id": "PAT-1790754171087-745f7c24",
+      "role": "PATIENT",
+      "name": "Patient A",
+      "email": "pata.1790754171083@example.com",
+      "password": "$2a$10$0EkejQ48ZACRNZqNILa16Ovpm9.OFxr0SZxaN5Kozov.0ibtHzfUm",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:42:51.186Z"
+    },
+    {
+      "id": "PAT-1790754171192-3a6de9ed",
+      "role": "PATIENT",
+      "name": "Patient B",
+      "email": "patb.1790754171189@example.com",
+      "password": "$2a$10$/fmZn0iUfdqOdtsIXJ.18eC03gCxW81WMoyUIzV4bdST5SEZmM5.K",
+      "age": 25,
+      "gender": "Prefer not to say",
+      "createdAt": "2026-09-30T07:42:51.338Z"
     }
   ],
   "hospitals": [
@@ -2315,6 +2345,114 @@
         "createdAt": "2026-09-30T07:27:41.513Z",
         "updatedAt": "2026-09-30T07:27:41.513Z"
       }
+    },
+    {
+      "id": "CONS-1790754171349-d1b4e659",
+      "displayId": "30/09/2026/007",
+      "patientId": "PAT-1790754171087-745f7c24",
+      "patientName": "Patient A",
+      "doctorId": "doc-1",
+      "hospitalId": "hospital-1",
+      "department": "General Medicine",
+      "suggestedDepartment": "General Medicine",
+      "appointmentDate": "2026-09-30",
+      "otp": "257213",
+      "otpExpiresAt": "2026-09-30T08:42:51.350Z",
+      "otpAttempts": 0,
+      "state": "OTP_GENERATED",
+      "lifecycleState": "NEW",
+      "priority": "ROUTINE",
+      "language": null,
+      "consentGiven": false,
+      "nextQuestion": null,
+      "structured": {
+        "patientName": {
+          "value": "Patient A",
+          "source": "Patient registration"
+        },
+        "age": {
+          "value": 25,
+          "source": "Patient registration"
+        },
+        "gender": {
+          "value": "Prefer not to say",
+          "source": "Patient registration"
+        }
+      },
+      "vitals": {},
+      "reports": [],
+      "responses": [],
+      "redFlags": [],
+      "decisionTrace": [
+        {
+          "timestamp": "2026-09-30T07:42:51.350Z",
+          "stage": "OBSERVE",
+          "event": "Case initialized",
+          "detail": "Patient Patient A registered for intake session.",
+          "action": "Ready for chief complaint inquiry"
+        }
+      ],
+      "missingInformation": [],
+      "summary": "",
+      "doctorNotes": "",
+      "prescription": {
+        "items": [],
+        "instructions": "",
+        "finalized": false,
+        "finalizedAt": null
+      },
+      "createdAt": "2026-09-30T07:42:51.350Z",
+      "updatedAt": "2026-09-30T07:42:51.350Z",
+      "patient": {
+        "id": "PAT-1790754171087-745f7c24",
+        "name": "Patient A",
+        "age": 25,
+        "gender": "Prefer not to say"
+      },
+      "caseState": {
+        "consultationId": "CONS-1790754171349-d1b4e659",
+        "patientId": "PAT-1790754171087-745f7c24",
+        "patientName": "Patient A",
+        "age": 25,
+        "gender": "Prefer not to say",
+        "rawNarrative": "",
+        "extractedEntities": {
+          "symptoms": [],
+          "duration": null,
+          "severity": null,
+          "location": null,
+          "radiation": null,
+          "associatedSymptoms": [],
+          "history": [],
+          "medications": [],
+          "allergies": [],
+          "vitals": {}
+        },
+        "missingInformation": [
+          "chief_complaint",
+          "onset_and_duration",
+          "severity_score",
+          "character_and_location",
+          "associated_warning_signs",
+          "medical_history"
+        ],
+        "uncertainInformation": [],
+        "contradictoryInformation": [],
+        "answeredQuestions": [],
+        "candidateQuestions": [],
+        "selectedQuestion": null,
+        "risk": {
+          "level": "ROUTINE",
+          "score": 0,
+          "factors": []
+        },
+        "decisionTrace": [],
+        "questionCount": 0,
+        "status": "QUESTIONING",
+        "completionReason": null,
+        "createdAt": "2026-09-30T07:42:51.350Z",
+        "updatedAt": "2026-09-30T07:42:51.350Z"
+      }
     }
   ],
   "alerts": [
@@ -2714,6 +2852,54 @@
       "consultationId": null,
       "metadata": {},
       "timestamp": "2026-09-30T07:27:41.625Z"
+    },
+    {
+      "id": "AUDIT-1790754171070-b0ec4d70",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790754170940-88897e68",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:42:51.070Z"
+    },
+    {
+      "id": "AUDIT-1790754171187-5621f332",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790754171087-745f7c24",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:42:51.187Z"
+    },
+    {
+      "id": "AUDIT-1790754171339-bc6197db",
+      "action": "PATIENT_REGISTERED",
+      "actorId": "PAT-1790754171192-3a6de9ed",
+      "actorRole": "PATIENT",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:42:51.339Z"
+    },
+    {
+      "id": "AUDIT-1790754171350-09359dda",
+      "action": "OTP_GENERATED",
+      "actorId": "PAT-1790754171087-745f7c24",
+      "actorRole": "PATIENT",
+      "consultationId": "CONS-1790754171349-d1b4e659",
+      "metadata": {
+        "doctorId": "doc-1",
+        "displayId": "30/09/2026/007"
+      },
+      "timestamp": "2026-09-30T07:42:51.350Z"
+    },
+    {
+      "id": "AUDIT-1790754171476-fcde7962",
+      "action": "LOGIN",
+      "actorId": "doc-1",
+      "actorRole": "DOCTOR",
+      "consultationId": null,
+      "metadata": {},
+      "timestamp": "2026-09-30T07:42:51.476Z"
     }
   ]
 }
