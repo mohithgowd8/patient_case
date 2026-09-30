@@ -1,3 +1,3 @@
-const app = require("../Patient case taking/server");
+const app = require("../server");
 
 module.exports = app;

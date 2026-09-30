@@ -1,9 +1,5 @@
 {
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "Patient case taking/public/**,Patient case taking/data/**"
-    }
-  },
+  "version": 2,
   "rewrites": [
     {
       "source": "/(.*)",
